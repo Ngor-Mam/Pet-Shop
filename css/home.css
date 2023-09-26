@@ -207,7 +207,7 @@ header img {
 }
 .sale-card form {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 25%;
   right: 25%;
 }
@@ -216,7 +216,7 @@ header img {
   color: black;
   font-size: 20px;
   font-weight: bold;
-  background-color: #fff;
+  background-color: #0C89A5;
   padding: 20px;
 }
 
