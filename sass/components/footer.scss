@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    background-color: #0C89A5;
+    position: relative;
+    top: 100px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    a{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        color: #fff;
+    }
+    iframe{
+        height: 300px;
+    }
+}
