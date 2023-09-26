@@ -198,13 +198,11 @@ header img {
 
 .sale-card {
   width: 23%;
-  height: 50vh;
   padding: 20px 0px;
   position: relative;
 }
 .sale-card img {
   width: 100%;
-  height: 100%;
   border: 20px solid #fff;
 }
 .sale-card form {
