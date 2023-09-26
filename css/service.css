@@ -88,7 +88,8 @@ header .head-top {
   justify-content: space-between;
 }
 header .head-top-left {
-  padding: 50px 0px;
+  padding: 50px 50px 50px 0px;
+  font-size: 30px;
 }
 header .head-top-left strong {
   color: #0C89A5;
@@ -97,6 +98,7 @@ header .head-top-left form {
   padding: 20px 0px;
 }
 header .head-top-left form button {
+  font-size: 20px;
   padding: 10px 40px;
   background-color: yellow;
   border: none;
@@ -106,6 +108,25 @@ header .head-top-right img {
 }
 header .head-bottom h3 {
   padding: 50px 0px;
+  font-size: 30px;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
+
+.container {
+  padding: 50px 50px;
+  background-color: #0C89A5;
+  display: flex;
+  justify-content: space-between;
+}
+.container .content01 {
+  padding: 0px 10px;
+}
+.container .content01 img {
+  border-radius: 50%;
 }
 
 footer {
