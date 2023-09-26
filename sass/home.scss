@@ -1,5 +1,5 @@
-@import "./components/varaible";
-@import "./components/group";
+@import "./components/variable";
+@import "./components/groupmixins";
 *{
     @include univer;
 }
