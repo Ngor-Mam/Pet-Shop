@@ -10,5 +10,39 @@ body{
 .menu ul li:nth-child(2) a{
     color: #0C89A5;
     border-bottom:5px solid;
-}   
+}  
+header{
+    position: relative;
+    top: 100px;
+    background-color: #E7BF9D;
+    padding: 0px 50px;
+    .head-top{
+        display: flex;
+        justify-content: space-between
+    }
+    .head-top-left{
+        padding: 50px 0px;
+        strong{
+            color: #0C89A5;
+        }
+        form{
+            padding: 20px 0px; 
+            button{
+                padding: 10px 40px;
+                background-color: yellow;
+                border: none;
+            }
+        }
+    }
+    .head-top-right{
+        img{
+            width: 100%;
+        }
+    }
+    .head-bottom{
+        h3{
+            padding: 50px 0px;
+        }
+    }
+} 
 @import "./components/footer";
