@@ -1,0 +1,153 @@
+@import "./components/varaible";
+@import "./components/group";
+*{
+    @include univer;
+}
+body{
+    @include body;
+}
+@import "./components/nav";
+.menu ul li:nth-child(1) a{
+    color: #0C89A5;
+    border-bottom:5px solid;
+}   
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: $size $size + 30;
+    background-color: #EBEBE0;
+    position: relative;
+    top: 100px;
+    .head-lift{
+        h1{
+            font-size: 60px;
+            text-transform: uppercase;
+            padding:50px 0px 50px 0px ;
+            color: #6C3838;
+        }
+    }
+    button{
+        font-size: 40px;
+        border-radius: $size;
+        padding: $size;
+        text-transform: uppercase;
+        color: #6C3838;
+        border: 5px solid  #0C89A5;
+    }
+    img{
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        border: $size solid #085E72;
+    }
+}
+.home-container{
+    position: relative;
+    top: 100px;
+}
+.list-down{
+    background-color: #0C89A5;
+    display: flex;
+    justify-content: space-between;
+    padding: $size 50px;
+    h3{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid #fff;
+        color: #fff;
+        font-size: $size+5;
+    }
+    a{
+        color: #fff;
+        font-size: $size;
+    }
+    a:hover{
+        color: yellow;
+        border-bottom: 2px solid yellow;
+    } 
+}
+.content{
+    padding:$size 50px;
+}
+.produce{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    background-color: #fff;
+    border-bottom: 5px solid #0C89A5;
+    h2{
+        padding-right: 10px;
+        font-size: 40px;
+        padding: $size 0px 0px 0px;
+        font-weight: bold;
+        color:  #0C89A5;
+    }
+}
+
+
+
+.card{
+    padding: $size 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.new-produce-card{
+    width: 23%;
+    img{
+        width: 100%;
+    }
+}
+.describe{
+    text-align: center;
+    padding: 40px $size;
+    font-size: $size+5;
+    background-color: #0C89A5;
+    strong{
+        color: yellow;
+    }
+}
+.sale-produce{
+    display: flex;
+    h2{
+        padding: $size 0px 0px 0px;
+        font-size: 40px;
+        font-weight:bold;
+        color:  #0C89A5;
+        background-color: #fff;
+        border-bottom: 5px solid #0C89A5;
+    }
+}
+.salepro-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sale-card{
+    width: 23%;
+    padding: $size 0px;
+    position: relative;
+    img{
+        width: 100%;
+        border: $size solid #fff;
+    }
+    form{
+        position: absolute;
+        bottom: 10%;
+        left: 25%;
+        right: 25%;
+        button{
+            border: none;
+            color:black;
+            font-size: $size;
+            font-weight: bold;
+            background-color: #fff;
+            padding: $size;
+        }
+    }
+}
+
+
+@import "./components/footer"
