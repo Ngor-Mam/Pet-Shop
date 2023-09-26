@@ -1,0 +1,14 @@
+@import "./components/variable";
+@import "./components/groupmixins";
+*{
+    @include univer;
+}
+body{
+    @include body;
+}
+@import "./components/nav";
+.menu ul li:nth-child(2) a{
+    color: #0C89A5;
+    border-bottom:5px solid;
+}   
+@import "./components/footer";
