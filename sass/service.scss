@@ -60,9 +60,53 @@ main{
         padding: 0px 10px;
         img{
             border-radius: 50%;
-            // width: 80%;
-            // height: 100px;
+        }
+        .describe{
+            padding: 20px 0px;
+            text-align: center;
+            strong{
+                color: #fff;
+            }
         }
     }
 }
+
+.sale-produce{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;  
+}
+.pets{
+    padding-top: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+.pet-food{
+    padding: 20px 0px;
+    h3{
+        padding: 20px 0px 10px 0px;
+        border-bottom:2px solid black;
+        color: #0C89A5;
+        background-color: #fff;
+    }
+}
+.pet-material{
+    padding: 20px 0px;
+    h3{
+        padding: 20px 0px 10px 0px;
+        border-bottom:2px solid black ;
+        display: flex;
+        justify-content: end;
+        color: #0C89A5;
+        background-color: #fff;
+    }
+}
+.deteil{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+@import "./components/card";
 @import "./components/footer";
