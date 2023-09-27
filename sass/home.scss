@@ -1,5 +1,4 @@
-@import "./components/variable";
-@import "./components/groupmixins";
+@import "_main";
 *{
     @include univer;
 }
