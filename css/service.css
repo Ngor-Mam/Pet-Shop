@@ -226,6 +226,58 @@ main {
   color: #fff;
 }
 
+.our-service {
+  padding: 0px 50px;
+}
+.our-service .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.our-service .top img {
+  width: 48%;
+  border-radius: 10px;
+}
+.our-service .top .describe {
+  width: 48%;
+}
+.our-service .top .describe h1 {
+  font-size: 50px;
+}
+.our-service .top .describe p {
+  font-size: 25px;
+}
+.our-service .top .describe form {
+  padding-top: 20px;
+}
+.our-service .top .describe form button {
+  padding: 10px 20px;
+  background-color: yellow;
+  border: none;
+}
+.our-service .center .center-title {
+  text-align: center;
+  padding: 20px;
+}
+.our-service .center .card-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-service .center .card-box .box {
+  width: 32%;
+  background-color: #0C89A5;
+  margin-bottom: 20px;
+}
+.our-service .center .card-box .box img {
+  width: 100%;
+}
+.our-service .center .card-box .box .detail {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
 footer {
   display: flex;
   padding: 20px 50px;
