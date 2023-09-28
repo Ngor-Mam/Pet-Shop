@@ -77,6 +77,207 @@ form .material-icons {
   border-bottom: 5px solid;
 }
 
+header {
+  position: relative;
+  top: 100px;
+  background-color: #E7BF9D;
+  padding: 0px 50px;
+}
+header .head-top {
+  display: flex;
+  justify-content: space-between;
+}
+header .head-top-left {
+  padding: 50px 50px 50px 0px;
+  font-size: 30px;
+}
+header .head-top-left strong {
+  color: #0C89A5;
+}
+header .head-top-left form {
+  padding: 20px 0px;
+}
+header .head-top-left form button {
+  font-size: 20px;
+  padding: 10px 40px;
+  background-color: yellow;
+  border: none;
+}
+header .head-top-right img {
+  width: 100%;
+}
+header .head-bottom h3 {
+  padding: 50px 0px;
+  font-size: 30px;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
+
+.container {
+  padding: 50px 50px;
+  background-color: #0C89A5;
+  display: flex;
+  justify-content: space-between;
+}
+.container .content01 {
+  padding: 0px 10px;
+}
+.container .content01 img {
+  border-radius: 50%;
+}
+.container .content01 .describe {
+  padding: 20px 0px;
+  text-align: center;
+}
+.container .content01 .describe strong {
+  color: #fff;
+}
+
+.sale-produce {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+
+.pets {
+  padding-top: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.pet-food {
+  padding: 20px 0px;
+}
+.pet-food h3 {
+  padding: 20px 0px 10px 0px;
+  border-bottom: 2px solid black;
+  color: #0C89A5;
+  background-color: #fff;
+}
+
+.pet-material {
+  padding: 20px 0px;
+}
+.pet-material h3 {
+  padding: 20px 0px 10px 0px;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: end;
+  color: #0C89A5;
+  background-color: #fff;
+}
+
+.deteil {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.card {
+  width: 22%;
+  border-bottom: 2px solid;
+  background-color: #fff;
+}
+
+.card-top {
+  width: 100%;
+  position: relative;
+}
+.card-top img {
+  width: 100%;
+}
+.card-top p {
+  position: absolute;
+  right: 4%;
+  padding: 10px;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.card-botom {
+  width: 100%;
+  padding: 20px 10px;
+}
+.card-botom .describe strong {
+  background-color: rgb(176, 29, 29);
+  color: #fff;
+  padding: 1px 0px;
+}
+.card-botom .pric-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.card-botom strong {
+  font-weight: bold;
+  color: #0C89A5;
+}
+.card-botom form button {
+  padding: 10px 20px;
+  background-color: #0C89A5;
+  border: none;
+  color: #fff;
+}
+
+.our-service {
+  padding: 0px 50px;
+}
+.our-service .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.our-service .top img {
+  width: 48%;
+  border-radius: 10px;
+}
+.our-service .top .describe {
+  width: 48%;
+}
+.our-service .top .describe h1 {
+  font-size: 50px;
+}
+.our-service .top .describe p {
+  font-size: 25px;
+}
+.our-service .top .describe form {
+  padding-top: 20px;
+}
+.our-service .top .describe form button {
+  padding: 10px 20px;
+  background-color: yellow;
+  border: none;
+}
+.our-service .center .center-title {
+  text-align: center;
+  padding: 20px;
+}
+.our-service .center .card-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-service .center .card-box .box {
+  width: 32%;
+  background-color: #0C89A5;
+  margin-bottom: 20px;
+}
+.our-service .center .card-box .box img {
+  width: 100%;
+}
+.our-service .center .card-box .box .detail {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
 footer {
   display: flex;
   padding: 20px 50px;

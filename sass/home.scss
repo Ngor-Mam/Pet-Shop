@@ -1,5 +1,4 @@
-@import "./components/variable";
-@import "./components/groupmixins";
+@import "_main";
 *{
     @include univer;
 }
@@ -127,10 +126,12 @@ header{
 }
 .sale-card{
     width: 23%;
+    
     padding: $size 0px;
     position: relative;
     img{
         width: 100%;
+        
         border: $size solid #fff;
     }
     form{

@@ -1,5 +1,4 @@
-@import "./components/variable";
-@import "./components/groupmixins";
+@import "_main";
 *{
     @include univer;
 }
@@ -10,5 +9,167 @@ body{
 .menu ul li:nth-child(2) a{
     color: #0C89A5;
     border-bottom:5px solid;
-}   
+}  
+header{
+    position: relative;
+    top: 100px;
+    background-color: #E7BF9D;
+    padding: 0px 50px;
+    .head-top{
+        display: flex;
+        justify-content: space-between
+    }
+    .head-top-left{
+        padding: 50px 50px 50px 0px;
+        font-size: 30px;
+        strong{
+            color: #0C89A5;
+        }
+        form{
+            padding: 20px 0px; 
+            button{
+                font-size: 20px;
+                padding: 10px 40px;
+                background-color: yellow;
+                border: none;
+            }
+        }
+    }
+    .head-top-right{
+        img{
+            width: 100%;
+        }
+    }
+    .head-bottom{
+        h3{
+            padding: 50px 0px;
+            font-size: 30px;
+        }
+    }
+} 
+main{
+    position: relative;
+    top: 100px;
+}
+.container{
+    padding: 50px 50px;
+    background-color: #0C89A5;
+    display: flex;
+    justify-content: space-between;
+    .content01{
+        padding: 0px 10px;
+        img{
+            border-radius: 50%;
+        }
+        .describe{
+            padding: 20px 0px;
+            text-align: center;
+            strong{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.sale-produce{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;  
+}
+.pets{
+    padding-top: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+.pet-food{
+    padding: 20px 0px;
+    h3{
+        padding: 20px 0px 10px 0px;
+        border-bottom:2px solid black;
+        color: #0C89A5;
+        background-color: #fff;
+    }
+}
+.pet-material{
+    padding: 20px 0px;
+    h3{
+        padding: 20px 0px 10px 0px;
+        border-bottom:2px solid black ;
+        display: flex;
+        justify-content: end;
+        color: #0C89A5;
+        background-color: #fff;
+    }
+}
+.deteil{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+@import "./components/card";
+
+
+
+
+.our-service{
+    padding: 0px 50px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        img{
+            width: 48%;
+            border-radius: 10px;
+        }
+        .describe{
+            width: 48%;
+            h1{
+                font-size: 50px;
+            }
+            p{
+                font-size: 25px;
+            }
+            form{
+                padding-top: 20px;
+                button{
+                    padding: 10px 20px;
+                    background-color: yellow;
+                    border: none; 
+                }
+            }
+        }
+    }
+    .center{
+        .center-title{
+            text-align: center;
+            padding: 20px;
+        }
+        .card-box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .box{
+                width: 32%;
+                background-color: #0C89A5;
+                margin-bottom: 20px ;
+                img{
+                    width: 100%;
+                }
+                .detail{
+                    padding: 20px;
+                    text-align: center;
+                    color: #fff
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
 @import "./components/footer";
