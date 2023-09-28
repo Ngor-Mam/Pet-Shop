@@ -1,0 +1,11 @@
+@import "variables";
+button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: $text-button;
+    background-color: $main-color;
+    font-size: 17px;
+    margin-top: 18px;
+}
