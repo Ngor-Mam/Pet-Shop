@@ -40,7 +40,7 @@ nav ul li a {
   color: black;
 }
 nav ul li a:hover {
-  color: rgb(160, 230, 20);
+  color: #0C89A5;
   transition: 0.5s;
 }
 
@@ -75,6 +75,173 @@ form .material-icons {
 .menu ul li:nth-child(3) a {
   color: #0C89A5;
   border-bottom: 5px solid;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 50px 50px;
+}
+
+.main_left {
+  width: 45%;
+}
+.main_left h1 {
+  margin-bottom: 30px;
+}
+
+span {
+  color: #0C89A5;
+}
+
+.main_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 45%;
+}
+.main_right img {
+  width: 45%;
+  border-radius: 50%;
+  border: 10px solid #0C89A5;
+}
+
+h3 {
+  padding: 12px;
+  font-size: 16px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.section-top {
+  padding: 50px;
+  text-align: center;
+}
+
+.section-top h1 {
+  color: #0C89A5;
+}
+
+.section-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  text-align: center;
+}
+
+.section-img img {
+  width: 77%;
+  box-shadow: 5px 5px;
+}
+.section-img p {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.aside {
+  display: flex;
+  padding: 50px;
+  background: #0C89A5;
+  color: white;
+  flex-direction: column;
+}
+
+.aside-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aside-top_left {
+  width: 50%;
+}
+
+.aside-top_right {
+  display: flex;
+  width: 50%;
+}
+
+.aside-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center_left {
+  display: flex;
+  width: 50%;
+  margin-bottom: 35px;
+}
+
+.aside-bottom {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.group-img img {
+  width: 97%;
+  height: 40vh;
+  border-radius: 5%;
+  border: 6px solid white;
+}
+
+.value {
+  padding: 50px;
+}
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box {
+  width: 44%;
+  background-color: white;
+  border: 5px solid rgb(160, 230, 20);
+  border-radius: 12px;
+  padding: 18px;
+  margin: 10px;
+}
+
+.box p {
+  padding: 50px 20px 50px 20px;
+}
+
+h4,
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+h4 {
+  background: #0C89A5;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.community {
+  padding: 50px;
+}
+.community h1 {
+  color: #0C89A5;
+}
+.community p {
+  padding: 10px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
 }
 
 footer {
