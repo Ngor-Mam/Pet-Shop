@@ -10,6 +10,7 @@ body{
 .menu ul li:nth-child(3) a{
     color: #0C89A5;
     border-bottom:5px solid;
+<<<<<<< HEAD
 }  
 <<<<<<< HEAD
 @import "./components/header";
@@ -21,6 +22,11 @@ body{
 >>>>>>> 83d69181f33e54c729b8772d6c6780bb9771182f
 
 
+=======
+}
+@import "./components/button";  
+@import "./components/header";
+>>>>>>> 5bb889c70afd58dd085c986e26b8ddda5a55bda7
 
 .main {
     @include space;

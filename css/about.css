@@ -41,7 +41,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #0C89A5;
-  transition: 0.5s;
 }
 
 form {
@@ -52,8 +51,8 @@ form input {
   padding: 15px;
   font-size: 20px;
   border-radius: 20px 0px 0px 20px;
-  background-color: yellow;
-  border: 2px solid yellowgreen;
+  background-color: #f3f3ef;
+  border: none;
   color: black;
 }
 form input ::-moz-placeholder {
@@ -67,9 +66,9 @@ form input ::placeholder {
 form .material-icons {
   font-size: 32px;
   border-radius: 0px 20px 20px 0px;
-  background-color: #EBEBE0;
+  background-color: #c5c5c2;
   padding: 10.5px;
-  border: 2px solid yellowgreen;
+  border: none;
 }
 
 .menu ul li:nth-child(3) a {
@@ -77,6 +76,7 @@ form .material-icons {
   border-bottom: 5px solid;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 header {
   display: flex;
@@ -272,6 +272,8 @@ h4 {
   text-align: center;
 }
 
+=======
+>>>>>>> 5bb889c70afd58dd085c986e26b8ddda5a55bda7
 footer {
   display: flex;
   padding: 20px 50px;
