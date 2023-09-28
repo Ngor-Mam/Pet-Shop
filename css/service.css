@@ -226,13 +226,10 @@ main {
   color: #fff;
 }
 
-.our-service {
-  padding: 0px 50px;
-}
 .our-service .top {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 20px 50px;
 }
 .our-service .top img {
   width: 48%;
@@ -245,7 +242,7 @@ main {
   font-size: 50px;
 }
 .our-service .top .describe p {
-  font-size: 25px;
+  font-size: 20px;
 }
 .our-service .top .describe form {
   padding-top: 20px;
@@ -255,11 +252,17 @@ main {
   background-color: yellow;
   border: none;
 }
+.our-service .center {
+  background-color: #fff;
+}
 .our-service .center .center-title {
   text-align: center;
-  padding: 20px;
+  text-transform: uppercase;
+  color: #0C89A5;
+  padding: 20px 0px 0px 0px;
 }
 .our-service .center .card-box {
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -267,7 +270,7 @@ main {
 .our-service .center .card-box .box {
   width: 32%;
   background-color: #0C89A5;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .our-service .center .card-box .box img {
   width: 100%;
@@ -276,6 +279,40 @@ main {
   padding: 20px;
   text-align: center;
   color: #fff;
+}
+.our-service .center .card-box .box h3 {
+  padding: 10px;
+}
+.our-service .botom {
+  padding: 20px 50px;
+}
+.our-service .botom h2 {
+  text-align: center;
+  font-weight: bold;
+  color: yellow;
+  border-bottom: 1px solid;
+}
+.our-service .botom .botom-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.our-service .botom .botom-box .box {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+.our-service .botom .botom-box .box img {
+  width: 25%;
+  padding: 20px;
+}
+.our-service .botom .botom-box .box p {
+  padding: 20px;
 }
 
 footer {
