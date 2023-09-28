@@ -206,6 +206,69 @@ main .aside .aside-bottom .group-img img {
   border-radius: 5px;
 }
 
+.value {
+  padding: 50px 50px;
+}
+.value h2 {
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.value .card-box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.value .card-box .box {
+  width: 44%;
+  background-color: white;
+  border: 4px solid rgb(160, 230, 20);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 13px;
+}
+.value .card-box .box h4 {
+  padding: 50px;
+  border-radius: 10px;
+  color: white;
+  background: #0C89A5;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.value .card-box .box p {
+  padding: 60px 20px 60px 20px;
+}
+
+.community {
+  padding: 0px 50px;
+  background-color: white;
+}
+.community h2 {
+  color: #0C89A5;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.community p {
+  padding-left: 10px;
+}
+.community .img {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+.community .img .card-img {
+  padding: 0px 50px p;
+  padding-padding: 10px 35px 0px 35px;
+}
+.community .img .card-img img {
+  width: 100%;
+}
+
 footer {
   display: flex;
   padding: 20px 50px;
