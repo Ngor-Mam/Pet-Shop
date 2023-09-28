@@ -10,13 +10,9 @@ body{
 .menu ul li:nth-child(3) a{
     color: #0C89A5;
     border-bottom:5px solid;
-}  
-// @import "../sass/components/header";
-// @import "../sass/components/button";
-// @import "./components/header";
-// @import "./components/button";
-
-
+}
+@import "./components/button";  
+@import "./components/header";
 
 .main {
     @include space;
