@@ -53,9 +53,10 @@ header{
     h3{
         display: flex;
         flex-direction: column;
-        border-bottom: 5px solid #fff;
+        border-bottom: 2px solid #fff;
         color: #fff;
         font-size: $size+5;
+        margin-bottom: 15px;
     }
     a{
         color: #fff;
@@ -106,7 +107,10 @@ header{
     background-color: #0C89A5;
     strong{
         color: yellow;
+        
+        
     }
+    
 }
 .sale-produce{
     display: flex;
@@ -116,8 +120,26 @@ header{
         font-weight:bold;
         color:  #0C89A5;
         background-color: #fff;
-        border-bottom: 5px solid #0C89A5;
+       
     }
+}
+.sale-title{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #fff;
+    border-bottom: 5px solid #0C89A5;
+    h3{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid #fff;
+        color: black;
+        
+        margin-left: 20px;;
+    }
+    
+    
 }
 .salepro-card{
     display: flex;
@@ -132,7 +154,7 @@ header{
     img{
         width: 100%;
         
-        border: $size solid #fff;
+        border: 3px solid #fff;
     }
     form{
         position: absolute;
@@ -144,6 +166,7 @@ header{
             color:#fff;
             font-size: $size;
             font-weight: bold;
+            border-radius:10px;
             background-color: #0C89A5;
             padding: $size;
         }
