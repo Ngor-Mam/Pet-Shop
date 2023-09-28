@@ -9,5 +9,176 @@ body{
 .menu ul li:nth-child(3) a{
     color: #0C89A5;
     border-bottom:5px solid;
-}   
+}  
+@import "../sass/components/header";
+@import "../sass/components/button";
+@import "../sass/components/groupmixins";
+@import "../sass/components/variable";
+
+
+.main {
+    @include space;
+    width: 90%;
+    padding: 50px 50px;
+}
+
+.main_left {
+    width: 45%;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+}
+
+span {
+    color: $main-color;
+}
+
+.main_right {
+    @include centersnojus;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 45%;
+
+    img {
+        width: 45%;
+        border-radius: 50%;
+        border: 10px solid $main-color;
+    }
+}
+
+h3 {
+    padding: 12px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.section-top {
+    padding: 50px;
+    text-align: center;
+}
+
+.section-top h1 {
+    color: $main-color;
+}
+
+.section-right {
+    @include space;
+    align-items: end;
+    text-align: center;
+}
+
+.section-img {
+    img {
+        width: 77%;
+        box-shadow: 5px 5px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+.aside {
+    display: flex;
+    padding: 50px;
+    background: $main-color;
+    color: $text-button ;
+    flex-direction: column;
+}
+
+.aside-top {
+    @include centers;
+}
+
+.aside-top_left {
+    width: 50%;
+}
+
+.aside-top_right {
+    @include center;
+}
+
+.aside-center {
+    @include centers;
+}
+
+.center_left {
+    @include center;
+    margin-bottom: 35px;
+}
+
+.aside-bottom {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.group-img img {
+    width: 97%;
+    height: 40vh;
+    border-radius: 5%;
+    border: 6px solid $text-button;
+}
+
+.value {
+    padding: 50px;
+
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box {
+    width: 44%;
+    background-color: $text-button;
+    border: 5px solid $hover-color;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 10px;
+}
+
+.box p {
+    padding: 50px 20px 50px 20px;
+}
+
+h4,
+h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    background: $main-color;
+    padding: $padding-general;
+    border-radius: 10px;
+    color: $text-button;
+}
+
+.community {
+    padding: 50px;
+
+    h1 {
+        color: $main-color;
+    }
+
+    p {
+        padding: 10px;
+    }
+}
+
+.img {
+    @include centersnojus;
+    padding: 10px;
+    text-align: center;
+} 
 @import "./components/footer";
