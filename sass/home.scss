@@ -15,7 +15,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: $size $size + 30;
-    background-color: #EBEBE0;
+    background-color: $bg-color;
     position: relative;
     top: 100px;
     .head-lift{

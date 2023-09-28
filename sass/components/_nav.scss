@@ -22,15 +22,10 @@ nav{
                 color: $text-color;
             }
             a:hover{
-                color: rgb(160, 230, 20);
-                transition: 0.5s;
+                color: $main-color;
             }
         }
-    }
-    // .menu ul li:nth-child(1) a{
-    //     color: #0C89A5;
-    //     border-bottom:5px solid;
-    // }    
+    }  
 }
 form{
     @include centersnojus;
@@ -38,8 +33,8 @@ form{
         padding: $size - 5;
         font-size: $size;
         border-radius: 20px 0px 0px 20px; 
-        background-color: yellow;
-        border: 2px solid yellowgreen;
+        background-color: #f3f3ef;
+        border: none;
         color: $text-color;
         ::placeholder{
             font-size: 20px;
@@ -49,9 +44,9 @@ form{
     .material-icons{
         font-size: 32px;
         border-radius: 0px 20px 20px 0px; 
-        background-color: #EBEBE0;
+        background-color: #c5c5c2;
         padding: 10.5px;
-        border: 2px solid yellowgreen;
+        border: none;
     }
 }
 

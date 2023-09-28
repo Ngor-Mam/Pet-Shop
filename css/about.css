@@ -40,7 +40,7 @@ nav ul li a {
   color: black;
 }
 nav ul li a:hover {
-  color: rgb(160, 230, 20);
+  color: #0C89A5;
   transition: 0.5s;
 }
 
@@ -77,6 +77,7 @@ form .material-icons {
   border-bottom: 5px solid;
 }
 
+<<<<<<< HEAD
 header {
   display: flex;
   padding: 2px 50px;
@@ -102,6 +103,8 @@ header {
   height: 43vh;
 }
 
+=======
+>>>>>>> 83d69181f33e54c729b8772d6c6780bb9771182f
 .main {
   display: flex;
   justify-content: space-between;
