@@ -1,10 +1,13 @@
+@import "../main";
+
 footer{
     display: flex;
     padding: 20px 50px;
     justify-content: space-between;
     background-color: $main-color;
-    position: relative;
-    top: 100px;
+    @include responsive(phone){
+        flex-wrap: wrap;
+    }
 }
 .block{
     display: flex;
@@ -18,5 +21,13 @@ footer{
     }
     iframe{
         height: 300px;
+        @include responsive(tablet){
+            width: 250px;
+            height: 250px;
+        }
+        @include responsive(phone){
+            width: 380px;
+            height: 200px;
+        }
     }
 }

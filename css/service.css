@@ -1,3 +1,10 @@
+button {
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.781);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,12 +24,23 @@ body {
 nav {
   width: 100%;
   height: 100px;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 1;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   padding: 2px 50px;
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    height: 50px;
+  }
 }
 nav .menu {
   display: flex;
@@ -36,8 +54,24 @@ nav ul li {
   font-size: 20px;
   font-weight: bold;
 }
+@media screen and (max-width: 1024px) {
+  nav ul li {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    padding: 10px;
+  }
+}
 nav ul li a {
   color: #2C2D3F;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  nav ul li a {
+    text-transform: capitalize;
+  }
 }
 nav ul li a:hover {
   color: #1A76D1;
@@ -46,6 +80,11 @@ nav ul li a:hover {
 form {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  form {
+    display: none;
+  }
 }
 form :hover {
   color: #1A76D1;
@@ -83,46 +122,89 @@ form .material-icons {
 }
 
 header {
-  position: relative;
-  top: 100px;
-  background-color: #fff;
-  padding: 0px 50px;
-}
-header .head-top {
   display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 0px 50px 0px 50px;
   justify-content: space-between;
 }
-header .head-top-left {
-  padding: 50px 50px 50px 0px;
-  font-size: 30px;
+header .blur {
+  display: none;
 }
-header .head-top-left strong {
-  color: #1A76D1;
+header .head-top {
+  flex: 4;
+  display: flex;
 }
-header .head-top-left form {
-  padding: 20px 0px;
+header .head-top .head-top-left {
+  flex: 2;
 }
-header .head-top-left form :hover {
-  color: #1A76D1;
-  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+@media screen and (max-width: 600px) {
+  header .head-top .head-top-left form {
+    display: block;
+  }
 }
-header .head-top-left form button {
-  font-size: 20px;
-  padding: 10px 40px;
-  background-color: yellow;
+header .head-top .head-top-left form button {
+  padding: 5px 20px;
   border: none;
+  background-color: yellow;
+  font-size: 17px;
+  transition: 0.5s;
+  color: black;
 }
-header .head-top-right img {
-  width: 100%;
+header .head-top .head-top-left form button:hover {
+  background-color: #1A76D1;
+  color: #fff;
 }
-header .head-bottom h3 {
-  padding: 50px 0px;
-  font-size: 30px;
+header .head-top .head-top-right {
+  flex: 3;
+  background-image: url(../img/service-header-image-removebg-preview\ \(1\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    position: relative;
+    background-image: url(../img/service-header-image-removebg-preview\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header .blur {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3098039216);
+    z-index: -1;
+  }
+  header .head-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .head-top .head-top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  header .head-top .head-top-left h1 {
+    color: #2C2D3F;
+  }
+  header .head-bottom,
+  header .head-top-right {
+    display: none;
+  }
 }
 
-main {
-  position: relative;
-  top: 100px;
+.head-top-right img {
+  width: 100%;
+}
+
+.head-bottom h3 {
+  padding: 50px 0px;
+  font-size: 30px;
 }
 
 .container {
@@ -347,8 +429,11 @@ footer {
   padding: 20px 50px;
   justify-content: space-between;
   background-color: #1A76D1;
-  position: relative;
-  top: 100px;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    flex-wrap: wrap;
+  }
 }
 
 .block {
@@ -364,4 +449,16 @@ footer {
 }
 .block iframe {
   height: 300px;
+}
+@media screen and (max-width: 1024px) {
+  .block iframe {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .block iframe {
+    width: 380px;
+    height: 200px;
+  }
 }/*# sourceMappingURL=service.css.map */

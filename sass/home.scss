@@ -16,8 +16,6 @@ header{
     justify-content: space-between;
     padding: $size $size + 30;
     background-color: $bg-color;
-    position: relative;
-    top: 100px;
     .head-lift{
         h1{
             font-size: 50px;
@@ -41,10 +39,9 @@ header{
         border: 10px solid $main-color;
     }
 }
-.home-container{
-    position: relative;
-    top: 100px;
-}
+// .home-container{
+
+// }
 .list-down{
     background-color: $main-color;
     display: flex;

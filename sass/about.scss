@@ -16,9 +16,7 @@ body{
 
 
 header{
-
-    position: relative;
-    top: 100px;
+    background-color: $bg-color;
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
@@ -26,12 +24,8 @@ header{
         position: relative;
         display: inline-block;
         padding-top: 50px;
-<<<<<<< HEAD
         font-size: 30px;
         color:$text-color;
-=======
-        color: #6C3838;
->>>>>>> da6f9c953c71419f30ef0a75a39528662218a7af
     }
       button{
                 padding: 10px 50px;
@@ -60,8 +54,6 @@ header{
     
 }
 main{
-    position: relative;
-    top: 100px;
     background-color: #fff;
     .about-us01{
         display: flex;
@@ -175,8 +167,6 @@ main{
 // ================================
 
 .value{
-    position: relative;
-    top: 100px;
     padding: 20px 50px;
     h2{
         color:$main-color;
@@ -212,8 +202,6 @@ main{
     }
 }
 .community{
-    position: relative;
-    top: 100px;
     padding:0px 50px ;
     background-color: #ffff;
     text-align: center;

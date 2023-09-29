@@ -1,4 +1,5 @@
 @import "_main";
+@import "./components/button";
 *{
     @include univer;
 }
@@ -11,32 +12,79 @@ body{
     border-bottom:5px solid;
 }  
 header{
-    position: relative;
-    top: 100px;
-    background-color: #fff;
-    padding: 0px 50px;
-    .head-top{
-        display: flex;
-        justify-content: space-between
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 0px 50px 0px 50px;
+    justify-content: space-between;
+    .blur {
+        display: none;
     }
-    .head-top-left{
-        padding: 50px 50px 50px 0px;
-        font-size: 30px;
-        strong{
-            color: $main-color;
-        }
-        form{
-            padding: 20px 0px; 
-            @include hover;
-            button{
-                font-size: 20px;
-                padding: 10px 40px;
-                background-color: yellow;
-                border: none;
-                
+    .head-top {
+        flex: 4;
+        display: flex;
+        .head-top-left {
+            flex: 2;
+            form {
+                @include responsive(phone) {
+                    display: block;
+                }
+                button {
+                    padding: 5px 20px;
+                    border: none;
+                    background-color: yellow;
+                    font-size: 17px;
+                    transition: 0.5s;
+                    color: black;
+                    &:hover {
+                        background-color: $main-color;
+                        color: #fff;
+                    }
+                }
             }
         }
+        .head-top-right {
+            flex: 3;
+            background-image: url(../img/service-header-image-removebg-preview\ \(1\).png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
+    @include responsive(tablet) {
+        position: relative;
+        background-image: url(../img/service-header-image-removebg-preview\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .blur {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #0000004f;
+            z-index: -1;
+        }
+        .head-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .head-top-left {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h1 {
+                    color: $text-color;
+                }
+            }
+        }
+        .head-bottom,
+        .head-top-right {
+            display: none;
+        }
+    }
+}
     .head-top-right{
         img{
             width: 100%;
@@ -48,11 +96,6 @@ header{
             font-size: 30px;
         }
     }
-} 
-main{
-    position: relative;
-    top: 100px;
-}
 .container{
     padding: 50px 50px;
     background-color: $main-color;
