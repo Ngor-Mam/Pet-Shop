@@ -8,11 +8,7 @@
 @mixin body{
     width: 100%;
     height: auto;
-<<<<<<< HEAD
     background-color: #e4e4e0;
-=======
-    background-color:$text-button;
->>>>>>> 8a3737c6479f0182cabb488f9ba93ed7879ba780
 }
 @mixin centers{
     display: flex;
@@ -30,4 +26,10 @@
 @mixin center {
     display: flex;
     width: 50%;
+}
+@mixin hover{
+    :hover{
+        color: $main-color;
+        box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    }
 }

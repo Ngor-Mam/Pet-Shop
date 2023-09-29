@@ -1,3 +1,4 @@
+@import "../main";
 .card{
     width: 22%;
     border-bottom: 2px solid;
@@ -24,7 +25,7 @@
         strong{
             background-color: rgb(176, 29, 29);
             color: #fff;
-            padding: 1px 0px;
+            padding: 1px 10px;
         }
     }
     .pric-buy{
@@ -32,17 +33,22 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 20px;
-    }
-    strong{
-        font-weight: bold;
-        color: #0C89A5;
-    }
-    form{
-        button{
-            padding: 10px 20px;
-            background-color: #0C89A5;
-            border: none;
-            color: #fff
+        margin-top: auto;
+        strong{
+            font-weight: bold;
+            color: $main-color;
+        }
+        form{
+            :hover{
+                color: #d41b1b;
+            }
+            button{
+                padding: 10px 20px;
+                background-color: $main-color;
+                border: none;
+                color: #fff
+            }
         }
     }
+
 }

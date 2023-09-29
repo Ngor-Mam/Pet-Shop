@@ -11,11 +11,7 @@
 body {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   background-color: #e4e4e0;
-=======
-  background-color: white;
->>>>>>> 8a3737c6479f0182cabb488f9ba93ed7879ba780
 }
 
 nav {
@@ -23,7 +19,7 @@ nav {
   height: 100px;
   position: fixed;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.5882352941);
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   padding: 2px 50px;
@@ -51,34 +47,38 @@ form {
   display: flex;
   align-items: center;
 }
+form :hover {
+  color: #1A76D1;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+}
 form input {
   margin-left: auto;
   width: 50%;
   padding: 15px;
   font-size: 20px;
   border-radius: 20px 0px 0px 20px;
-  background-color: #fff;
+  background-color: #dedbdb;
   border: none;
   color: #2C2D3F;
 }
 form input ::-moz-placeholder {
   font-size: 20px;
-  color: black;
+  color: #1A76D1;
 }
 form input ::placeholder {
   font-size: 20px;
-  color: black;
+  color: #1A76D1;
 }
 form .material-icons {
   font-size: 32px;
   border-radius: 0px 20px 20px 0px;
   background-color: #c5c5c2;
-  padding: 10.5px;
+  padding: 12.5px;
   border: none;
 }
 
 .menu ul li:nth-child(2) a {
-  color: #0C89A5;
+  color: #1A76D1;
   border-bottom: 5px solid;
 }
 
@@ -97,10 +97,14 @@ header .head-top-left {
   font-size: 30px;
 }
 header .head-top-left strong {
-  color: #0C89A5;
+  color: #1A76D1;
 }
 header .head-top-left form {
   padding: 20px 0px;
+}
+header .head-top-left form :hover {
+  color: #1A76D1;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
 }
 header .head-top-left form button {
   font-size: 20px;
@@ -123,19 +127,28 @@ main {
 
 .container {
   padding: 50px 50px;
-  background-color: #0C89A5;
+  background-color: #1A76D1;
   display: flex;
   justify-content: space-between;
 }
 .container .content01 {
   padding: 0px 10px;
+  transition: 0.5s;
+}
+.container .content01:hover {
+  position: relative;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+  transition: 0.5s;
 }
 .container .content01 img {
   border-radius: 50%;
+  position: relative;
+  padding-top: 20px;
 }
 .container .content01 .describe {
   padding: 20px 0px;
   text-align: center;
+  position: relative;
 }
 .container .content01 .describe strong {
   color: #fff;
@@ -162,7 +175,7 @@ main {
 .pet-food h3 {
   padding: 20px 0px 10px 0px;
   border-bottom: 2px solid black;
-  color: #0C89A5;
+  color: #1A76D1;
   background-color: #fff;
 }
 
@@ -174,7 +187,7 @@ main {
   border-bottom: 2px solid black;
   display: flex;
   justify-content: end;
-  color: #0C89A5;
+  color: #1A76D1;
   background-color: #fff;
 }
 
@@ -212,21 +225,25 @@ main {
 .card-botom .describe strong {
   background-color: rgb(176, 29, 29);
   color: #fff;
-  padding: 1px 0px;
+  padding: 1px 10px;
 }
 .card-botom .pric-buy {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  margin-top: auto;
 }
-.card-botom strong {
+.card-botom .pric-buy strong {
   font-weight: bold;
-  color: #0C89A5;
+  color: #1A76D1;
 }
-.card-botom form button {
+.card-botom .pric-buy form :hover {
+  color: #d41b1b;
+}
+.card-botom .pric-buy form button {
   padding: 10px 20px;
-  background-color: #0C89A5;
+  background-color: #1A76D1;
   border: none;
   color: #fff;
 }
@@ -252,10 +269,16 @@ main {
 .our-service .top .describe form {
   padding-top: 20px;
 }
+.our-service .top .describe form :hover {
+  color: #1A76D1;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+}
 .our-service .top .describe form button {
   padding: 10px 20px;
   background-color: yellow;
   border: none;
+  cursor: pointer;
+  font-size: 20px;
 }
 .our-service .center {
   background-color: #fff;
@@ -263,7 +286,7 @@ main {
 .our-service .center .center-title {
   text-align: center;
   text-transform: uppercase;
-  color: #0C89A5;
+  color: #1A76D1;
   padding: 20px 0px 0px 0px;
 }
 .our-service .center .card-box {
@@ -274,7 +297,7 @@ main {
 }
 .our-service .center .card-box .box {
   width: 32%;
-  background-color: #0C89A5;
+  background-color: #1A76D1;
   margin-bottom: 20px;
 }
 .our-service .center .card-box .box img {
@@ -294,7 +317,7 @@ main {
 .our-service .botom h2 {
   text-align: center;
   font-weight: bold;
-  color: #0C89A5;
+  color: #1A76D1;
   border-bottom: 1px solid;
 }
 .our-service .botom .botom-box {

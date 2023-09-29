@@ -7,7 +7,7 @@ body{
 }
 @import "./components/nav";
 .menu ul li:nth-child(1) a{
-    color: #0C89A5;
+    color: $main-color;
     border-bottom:5px solid;
 }   
 

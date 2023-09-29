@@ -11,11 +11,7 @@
 body {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   background-color: #e4e4e0;
-=======
-  background-color: white;
->>>>>>> 8a3737c6479f0182cabb488f9ba93ed7879ba780
 }
 
 nav {
@@ -23,7 +19,7 @@ nav {
   height: 100px;
   position: fixed;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.5882352941);
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   padding: 2px 50px;
@@ -51,34 +47,38 @@ form {
   display: flex;
   align-items: center;
 }
+form :hover {
+  color: #1A76D1;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+}
 form input {
   margin-left: auto;
   width: 50%;
   padding: 15px;
   font-size: 20px;
   border-radius: 20px 0px 0px 20px;
-  background-color: #fff;
+  background-color: #dedbdb;
   border: none;
   color: #2C2D3F;
 }
 form input ::-moz-placeholder {
   font-size: 20px;
-  color: black;
+  color: #1A76D1;
 }
 form input ::placeholder {
   font-size: 20px;
-  color: black;
+  color: #1A76D1;
 }
 form .material-icons {
   font-size: 32px;
   border-radius: 0px 20px 20px 0px;
   background-color: #c5c5c2;
-  padding: 10.5px;
+  padding: 12.5px;
   border: none;
 }
 
 .menu ul li:nth-child(3) a {
-  color: #0C89A5;
+  color: #1A76D1;
   border-bottom: 5px solid;
 }
 
@@ -93,8 +93,8 @@ header .header-left {
   position: relative;
   display: inline-block;
   padding-top: 50px;
-  font-size: 20px;
-  color: #6C3838;
+  font-size: 30px;
+  color: #2C2D3F;
 }
 header button {
   padding: 10px 50px;
@@ -106,7 +106,7 @@ header .header-left-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 500px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
@@ -268,11 +268,13 @@ main .aside .aside-bottom .group-img img {
   text-align: center;
 }
 .community .img .card-img {
-  padding: 0px 50px p;
-  padding-padding: 10px 35px 0px 35px;
+  padding: 50px 50px;
+}
+.community .img .card-img p {
+  padding: 10px 35px 0px 35px;
 }
 .community .img .card-img img {
-  width: 100%;
+  width: 90%;
 }
 
 footer {

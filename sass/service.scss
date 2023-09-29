@@ -7,7 +7,7 @@ body{
 }
 @import "./components/nav";
 .menu ul li:nth-child(2) a{
-    color: #0C89A5;
+    color: $main-color;
     border-bottom:5px solid;
 }  
 header{
@@ -23,15 +23,17 @@ header{
         padding: 50px 50px 50px 0px;
         font-size: 30px;
         strong{
-            color: #0C89A5;
+            color: $main-color;
         }
         form{
             padding: 20px 0px; 
+            @include hover;
             button{
                 font-size: 20px;
                 padding: 10px 40px;
                 background-color: yellow;
                 border: none;
+                
             }
         }
     }
@@ -53,17 +55,27 @@ main{
 }
 .container{
     padding: 50px 50px;
-    background-color: #0C89A5;
+    background-color: $main-color;
     display: flex;
     justify-content: space-between;
+   
     .content01{
+        &:hover{
+            position: relative;
+            box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+            transition: 0.5s;
+        }
         padding: 0px 10px;
+        transition: 0.5s;
         img{
             border-radius: 50%;
+            position: relative;
+            padding-top: 20px;
         }
         .describe{
             padding: 20px 0px;
             text-align: center;
+            position: relative;
             strong{
                 color: #fff;
             }
@@ -87,7 +99,7 @@ main{
     h3{
         padding: 20px 0px 10px 0px;
         border-bottom:2px solid black;
-        color: #0C89A5;
+        color: $main-color;
         background-color: #fff;
     }
 }
@@ -98,7 +110,7 @@ main{
         border-bottom:2px solid black ;
         display: flex;
         justify-content: end;
-        color: #0C89A5;
+        color: $main-color;
         background-color: #fff;
     }
 }
@@ -127,10 +139,16 @@ main{
             }
             form{
                 padding-top: 20px;
+                :hover{
+                    color: $main-color;
+                    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+                }
                 button{
                     padding: 10px 20px;
                     background-color: yellow;
                     border: none; 
+                    cursor: pointer;
+                    font-size: 20px;
                 }
             }
         }
@@ -140,7 +158,7 @@ main{
         .center-title{
             text-align: center;
             text-transform: uppercase;
-            color: #0C89A5;
+            color: $main-color;
             padding: 20px 0px 0px 0px;
             
         }
@@ -151,7 +169,7 @@ main{
             flex-wrap: wrap;
             .box{
                 width: 32%;
-                background-color: #0C89A5;
+                background-color: $main-color;
                 margin-bottom: 20px ;
                 img{
                     width: 100%;
@@ -173,7 +191,7 @@ main{
     h2{
         text-align: center;
         font-weight: bold;
-        color: #0C89A5;
+        color:$main-color;
         border-bottom: 1px solid;
     }
     .botom-box{
