@@ -37,10 +37,10 @@ nav ul li {
   font-weight: bold;
 }
 nav ul li a {
-  color: black;
+  color: #2C2D3F;
 }
 nav ul li a:hover {
-  color: #0C89A5;
+  color: #1A76D1;
 }
 
 form {
@@ -53,7 +53,7 @@ form input {
   border-radius: 20px 0px 0px 20px;
   background-color: #f3f3ef;
   border: none;
-  color: black;
+  color: #2C2D3F;
 }
 form input ::-moz-placeholder {
   font-size: 20px;
@@ -88,7 +88,7 @@ header .head-lift h1 {
   font-size: 50px;
   text-transform: uppercase;
   padding: 222px 0px 50px 0px;
-  color: black;
+  color: #2C2D3F;
 }
 header button {
   font-size: 40px;
@@ -96,13 +96,13 @@ header button {
   padding: 20px;
   text-transform: uppercase;
   color: #6C3838;
-  border: 5px solid #0C89A5;
+  border: 5px solid #1A76D1;
 }
 header img {
   width: 50%;
   height: auto;
   border-radius: 10px;
-  border: 10px solid #085E72;
+  border: 10px solid #1A76D1;
 }
 
 .home-container {
@@ -111,7 +111,7 @@ header img {
 }
 
 .list-down {
-  background-color: #0C89A5;
+  background-color: #1A76D1;
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
@@ -145,14 +145,14 @@ header img {
 .title {
   display: flex;
   background-color: #fff;
-  border-bottom: 5px solid #0C89A5;
+  border-bottom: 5px solid #1A76D1;
 }
 .title h2 {
   padding-right: 10px;
   font-size: 40px;
   padding: 20px 0px 0px 0px;
   font-weight: bold;
-  color: #0C89A5;
+  color: #1A76D1;
 }
 
 .card {
@@ -172,7 +172,7 @@ header img {
   text-align: center;
   padding: 20px 20px;
   font-size: 25px;
-  background-color: #0C89A5;
+  background-color: #1A76D1;
 }
 .describe strong {
   color: yellow;
@@ -188,7 +188,7 @@ header img {
   padding: 20px 0px 0px 0px;
   font-size: 40px;
   font-weight: bold;
-  color: #0C89A5;
+  color: #1A76D1;
   background-color: #fff;
 }
 
@@ -197,7 +197,7 @@ header img {
   justify-content: flex-end;
   align-items: flex-start;
   background-color: #fff;
-  border-bottom: 5px solid #0C89A5;
+  border-bottom: 5px solid #1A76D1;
 }
 .sale-title h3 {
   display: flex;
@@ -234,7 +234,7 @@ header img {
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
-  background-color: #0C89A5;
+  background-color: #1A76D1;
   padding: 20px;
 }
 
@@ -242,7 +242,7 @@ footer {
   display: flex;
   padding: 20px 50px;
   justify-content: space-between;
-  background-color: #0C89A5;
+  background-color: #1A76D1;
   position: relative;
   top: 100px;
 }
