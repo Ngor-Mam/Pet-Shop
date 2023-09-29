@@ -11,11 +11,8 @@
 body {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   background-color: #e4e4e0;
-=======
-  background-color: white;
->>>>>>> 8a3737c6479f0182cabb488f9ba93ed7879ba780
+  font-size: 20px;
 }
 
 nav {
@@ -93,14 +90,14 @@ header .header-left {
   position: relative;
   display: inline-block;
   padding-top: 50px;
-  font-size: 20px;
   color: #6C3838;
 }
 header button {
   padding: 10px 50px;
-  background-color: #0C89A5;
+  background-color: #1A76D1;
   color: #fff;
   border: none;
+  font-size: 20px;
 }
 header .header-left-content {
   display: none;
@@ -131,13 +128,20 @@ main .about-us01 .main_left {
   width: 50%;
   padding: 50px 0px;
 }
+main .about-us01 h1 {
+  color: #1A76D1;
+}
 main .about-us01 .main_right {
   text-align: center;
   padding: 50px 0px;
 }
 main .about-us01 .main_right img {
+  width: 65%;
   border-radius: 50%;
-  border: 10px solid #0C89A5;
+  border: 8px solid #1A76D1;
+}
+main .about-us01 .main_right h3 {
+  color: #6C3838;
 }
 main .about-us02 {
   padding: 0px 50px;
@@ -147,7 +151,7 @@ main .about-us02 .section-top {
   padding: 20px;
 }
 main .about-us02 .section-top h1 {
-  color: #0C89A5;
+  color: #1A76D1;
   font-weight: bold;
   padding: 10px;
 }
@@ -162,9 +166,14 @@ main .about-us02 .section-bottom .section-img {
 }
 main .about-us02 .section-bottom .section-img img {
   width: 100%;
+  box-shadow: #1A76D1 5px 5px 2px 2px;
+}
+main .about-us02 .section-bottom .section-img h3 {
+  padding: 10px;
+  color: #6C3838;
 }
 main .aside {
-  background-color: #0C89A5;
+  background-color: #1A76D1;
   color: #fff;
   padding: 20px 0px;
 }
@@ -186,7 +195,6 @@ main .aside .aside-center {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
-  font-size: 20px;
 }
 main .aside .aside-center .center_left {
   width: 70%;
@@ -213,13 +221,15 @@ main .aside .aside-bottom .group-img img {
 }
 
 .value {
-  padding: 50px 50px;
+  position: relative;
+  top: 100px;
+  padding: 20px 50px;
 }
 .value h2 {
-  padding-left: 10px;
+  color: #1A76D1;
   text-transform: uppercase;
   font-size: 30px;
-  padding-bottom: 20px;
+  text-align: center;
 }
 .value .card-box {
   display: flex;
@@ -227,36 +237,37 @@ main .aside .aside-bottom .group-img img {
   text-align: center;
 }
 .value .card-box .box {
-  width: 44%;
+  width: 47.5%;
   background-color: white;
-  border: 4px solid rgb(160, 230, 20);
+  box-shadow: #1A76D1 5px 5px 2px 2px;
   border-radius: 15px;
-  padding: 20px;
-  margin: 13px;
+  padding: 23px;
+  margin: 15px;
 }
 .value .card-box .box h4 {
-  padding: 50px;
+  padding: 30px;
   border-radius: 10px;
   color: white;
   background: #1A76D1;
   text-transform: uppercase;
-  font-size: 30px;
-  padding-bottom: 20px;
+  font-size: 25px;
 }
 .value .card-box .box p {
   padding: 60px 20px 60px 20px;
 }
 
 .community {
+  position: relative;
+  top: 100px;
   padding: 0px 50px;
   background-color: white;
+  text-align: center;
 }
 .community h2 {
-  color: #0C89A5;
-  padding-left: 10px;
+  color: #1A76D1;
+  padding: 20px;
   text-transform: uppercase;
   font-size: 30px;
-  padding-bottom: 20px;
 }
 .community p {
   padding-left: 10px;
@@ -268,8 +279,7 @@ main .aside .aside-bottom .group-img img {
   text-align: center;
 }
 .community .img .card-img {
-  padding: 0px 50px p;
-  padding-padding: 10px 35px 0px 35px;
+  padding: 50px 50px;
 }
 .community .img .card-img img {
   width: 100%;
