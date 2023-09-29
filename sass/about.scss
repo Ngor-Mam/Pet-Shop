@@ -27,7 +27,7 @@ header{
         padding-top: 50px;
         font-size: 20px;
         color: #6C3838;
-      }
+    }
       button{
                 padding: 10px 50px;
                 background-color: #0C89A5;
@@ -127,7 +127,7 @@ main{
             .center_left{
                 width: 70%;
                 padding: 20px 0px;
-                // background-color: #0C89A5;
+
             }
             .center_right{
                 width: 30%;
@@ -210,12 +210,12 @@ main{
         align-items: center;
         text-align: center;
         .card-img{
-            padding:0px 50px 
+            padding: 50px 50px ;
             p{
                 padding: 10px 35px 0px 35px;
             }
             img{
-                width: 100%;
+                width: 90%;
             }
         }
     }
