@@ -11,7 +11,11 @@
 body {
   width: 100%;
   height: auto;
+<<<<<<< HEAD
+  background-color: #e4e4e0;
+=======
   background-color: white;
+>>>>>>> 8a3737c6479f0182cabb488f9ba93ed7879ba780
 }
 
 nav {
@@ -19,7 +23,7 @@ nav {
   height: 100px;
   position: fixed;
   z-index: 1;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5882352941);
   display: flex;
   justify-content: space-between;
   padding: 2px 50px;
@@ -48,10 +52,12 @@ form {
   align-items: center;
 }
 form input {
+  margin-left: auto;
+  width: 50%;
   padding: 15px;
   font-size: 20px;
   border-radius: 20px 0px 0px 20px;
-  background-color: #f3f3ef;
+  background-color: #fff;
   border: none;
   color: #2C2D3F;
 }

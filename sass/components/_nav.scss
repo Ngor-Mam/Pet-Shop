@@ -6,7 +6,7 @@ nav{
     height: 100px;
     position:fixed;
     z-index: 1;
-    background-color: #fff;
+    background-color: #ffffff96;
     @include space;
     padding: $nav-padding;
     .menu{
@@ -30,10 +30,12 @@ nav{
 form{
     @include centersnojus;
     input{
+        margin-left: auto;
+        width: 50%;
         padding: $size - 5;
         font-size: $size;
         border-radius: 20px 0px 0px 20px; 
-        background-color: #f3f3ef;
+        background-color: #fff;
         border: none;
         color: $text-color;
         ::placeholder{
