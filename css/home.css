@@ -4,14 +4,14 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   outline: none;
 }
 
 body {
   width: 100%;
   height: auto;
-  background-color: #b7b7b3;
+  background-color: white;
 }
 
 nav {
@@ -85,10 +85,10 @@ header {
   top: 100px;
 }
 header .head-lift h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-transform: uppercase;
-  padding: 50px 0px 50px 0px;
-  color: #6C3838;
+  padding: 222px 0px 50px 0px;
+  color: black;
 }
 header button {
   font-size: 40px;
@@ -102,7 +102,7 @@ header img {
   width: 50%;
   height: auto;
   border-radius: 10px;
-  border: 20px solid #085E72;
+  border: 10px solid #085E72;
 }
 
 .home-container {
@@ -121,7 +121,7 @@ header img {
   flex-direction: column;
   border-bottom: 2px solid #fff;
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 .list-down a {
@@ -170,12 +170,15 @@ header img {
 
 .describe {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
   font-size: 25px;
   background-color: #0C89A5;
 }
 .describe strong {
   color: yellow;
+}
+.describe p {
+  color: white;
 }
 
 .sale-produce {
