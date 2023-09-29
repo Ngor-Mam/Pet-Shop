@@ -20,10 +20,10 @@ header{
     top: 100px;
     .head-lift{
         h1{
-            font-size: 60px;
+            font-size: 50px;
             text-transform: uppercase;
-            padding:50px 0px 50px 0px ;
-            color: #6C3838;
+            padding:222px 0px 50px 0px ;
+            color:$text-color;
         }
     }
     button{
@@ -36,9 +36,9 @@ header{
     }
     img{
         width: 50%;
-        height: auto;
+        height:auto;
         border-radius: 10px;
-        border: $size solid #085E72;
+        border: 10px solid #085E72;
     }
 }
 .home-container{
@@ -55,7 +55,7 @@ header{
         flex-direction: column;
         border-bottom: 2px solid #fff;
         color: #fff;
-        font-size: $size+5;
+        font-size: $size;
         margin-bottom: 15px;
     }
     a{
@@ -93,22 +93,27 @@ header{
     padding: $size 0px;
     display: flex;
     justify-content: space-between;
+    
 }
 .new-produce-card{
     width: 23%;
+    
     img{
         width: 100%;
     }
 }
 .describe{
     text-align: center;
-    padding: 40px $size;
+    padding: $size $size;
     font-size: $size+5;
     background-color: #0C89A5;
     strong{
         color: yellow;
         
         
+    }
+    p{
+        color: $text-button;
     }
     
 }
