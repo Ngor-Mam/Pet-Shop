@@ -11,7 +11,7 @@
 body {
   width: 100%;
   height: auto;
-  background-color: #b7b7b3;
+  background-color: #e4e4e0;
 }
 
 nav {
@@ -19,7 +19,7 @@ nav {
   height: 100px;
   position: fixed;
   z-index: 1;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5882352941);
   display: flex;
   justify-content: space-between;
   padding: 2px 50px;
@@ -48,10 +48,12 @@ form {
   align-items: center;
 }
 form input {
+  margin-left: auto;
+  width: 50%;
   padding: 15px;
   font-size: 20px;
   border-radius: 20px 0px 0px 20px;
-  background-color: #f3f3ef;
+  background-color: #fff;
   border: none;
   color: black;
 }
@@ -198,7 +200,7 @@ main .aside .aside-bottom {
   justify-content: space-between;
 }
 main .aside .aside-bottom .group-img {
-  width: 30%;
+  width: 25%;
 }
 main .aside .aside-bottom .group-img img {
   width: 100%;

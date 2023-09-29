@@ -11,7 +11,7 @@
 body {
   width: 100%;
   height: auto;
-  background-color: #b7b7b3;
+  background-color: #e4e4e0;
 }
 
 nav {
@@ -19,7 +19,7 @@ nav {
   height: 100px;
   position: fixed;
   z-index: 1;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5882352941);
   display: flex;
   justify-content: space-between;
   padding: 2px 50px;
@@ -48,10 +48,12 @@ form {
   align-items: center;
 }
 form input {
+  margin-left: auto;
+  width: 50%;
   padding: 15px;
   font-size: 20px;
   border-radius: 20px 0px 0px 20px;
-  background-color: #f3f3ef;
+  background-color: #fff;
   border: none;
   color: black;
 }
@@ -79,7 +81,7 @@ form .material-icons {
 header {
   position: relative;
   top: 100px;
-  background-color: #E7BF9D;
+  background-color: #fff;
   padding: 0px 50px;
 }
 header .head-top {
@@ -269,7 +271,7 @@ main {
 .our-service .center .card-box .box {
   width: 32%;
   background-color: #0C89A5;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .our-service .center .card-box .box img {
   width: 100%;
@@ -288,14 +290,13 @@ main {
 .our-service .botom h2 {
   text-align: center;
   font-weight: bold;
-  color: yellow;
+  color: #0C89A5;
   border-bottom: 1px solid;
 }
 .our-service .botom .botom-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px 0px;
 }
 .our-service .botom .botom-box .box {
   width: 48%;
