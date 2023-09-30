@@ -16,14 +16,13 @@ footer{
     flex-direction: column;
     color: #fff;
     @include responsive(phone){
-        border: 1px solid;
         width: 100%;
     }
     ul{
         li{
             :hover{
             color: rgb(0, 229, 255);
-            border-bottom: 2px solid yellow;
+            border-bottom: 2px solid rgb(0, 229, 255);
             }
         }
     }
@@ -32,6 +31,9 @@ footer{
         align-items: center;
         padding: 5px;
         color: #fff;
+        @include responsive(phone){
+            padding: 0px;
+        }
     }
     iframe{
         height: 300px;
