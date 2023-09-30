@@ -46,6 +46,7 @@ header {
                     font-size: 17px;
                     transition: 0.5s;
                     color: black;
+                    
 
                     &:hover {
                         background-color: $main-color;
@@ -173,6 +174,7 @@ header {
                 color: #fff;
             }
         }
+        
     }
 }
 

@@ -54,8 +54,9 @@ header {
         border-radius: $size;
         padding: $size;
         text-transform: uppercase;
-        color: $text-button;
+        color: $text-color;
         border: 5px solid $main-color;
+        
         
 
         @include responsive('tablet') {
@@ -300,6 +301,10 @@ header {
             border-radius: 10px;
             background-color: $main-color;
             padding: $size;
+            a{
+                color: $text-button;
+                cursor: pointer;
+            }
             @include responsive('phone') {
                 font-size:10px;
                 padding: 5px;
