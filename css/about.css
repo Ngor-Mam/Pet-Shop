@@ -356,7 +356,6 @@ main .aside .aside-bottom .group-img img {
 }
 @media screen and (max-width: 600px) {
   .community h2 {
-    font-size: 25px;
     padding: 10px;
   }
 }
@@ -371,7 +370,7 @@ main .aside .aside-bottom .group-img img {
 @media screen and (max-width: 600px) {
   .community p {
     padding-left: 20px;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 .community .img {
@@ -408,7 +407,8 @@ main .aside .aside-bottom .group-img img {
 }
 @media screen and (max-width: 600px) {
   .community .img .card-img p {
-    padding: 10px;
+    padding-left: 20px;
+    font-size: 20px;
   }
 }
 .community .img .card-img img {

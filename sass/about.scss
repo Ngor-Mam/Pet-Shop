@@ -247,7 +247,6 @@ main{
         text-transform: uppercase;
         font-size: 30px;
         @include responsive('phone'){
-            font-size: 25px;
             padding: 10px;
         }
     }
@@ -258,7 +257,7 @@ main{
         }
         @include responsive('phone'){
             padding-left: 20px;
-            font-size: 15px;
+            font-size: 20px;
         }
     }
     .img{
@@ -285,7 +284,8 @@ main{
                     padding: 10px 5px;
                 }
                 @include responsive('phone'){
-                    padding: 10px;
+                    padding-left: 20px;
+                    font-size: 20px;
                 }
             }
             img{
