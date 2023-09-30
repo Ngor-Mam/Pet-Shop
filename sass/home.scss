@@ -90,6 +90,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: $size 50px;
+    @include responsive('phone') {
+        padding: $size 20px;
+    }
 
     h3 {
         display: flex;
@@ -98,11 +101,21 @@ header {
         color: #fff;
         font-size: $size;
         margin-bottom: 15px;
+        @include responsive('phone') {
+            font-size: 15px;
+            border-bottom: 1px solid #fff;
+            margin: 5px;
+        }
     }
 
     a {
         color: #fff;
         font-size: $size;
+        @include responsive('phone') {
+            font-size: 13px;
+            
+            
+        }
     }
 
     a:hover {
@@ -113,11 +126,17 @@ header {
 
 .content {
     padding: $size 50px;
+    @include responsive('tablet') {
+        padding: $size 10px;
+    }
+
+    
 }
 
 .produce {
     display: flex;
     flex-direction: column;
+    
 }
 
 .title {
@@ -131,7 +150,12 @@ header {
         padding: $size 0px 0px 0px;
         font-weight: bold;
         color: $main-color;
+        @include responsive('phone') {
+            font-size:30px;
+            
+         }
     }
+
 }
 
 
@@ -140,11 +164,24 @@ header {
     padding: $size 0px;
     display: flex;
     justify-content: space-between;
+    @include responsive('phone') {
+        display: flex;
+        flex-wrap: wrap;
+        padding:10px 10px;
+    }
+    
+    
+    
+
 
 }
 
 .new-produce-card {
     width: 23%;
+    @include responsive('phone') {
+        width: 48%;
+
+    }
 
     img {
         width: 100%;
@@ -156,6 +193,15 @@ header {
     padding: $size $size;
     font-size: $size+5;
     background-color: $main-color;
+    @include responsive('tablet') {
+        padding:10px 10px ;
+        font-size: 18px;
+    }
+    @include responsive('phone') {
+        padding:10px 10px ;
+        font-size: 15px;
+       
+    }
 
     strong {
         color: yellow;
@@ -190,14 +236,16 @@ header {
     background-color: #fff;
     border-bottom: 5px solid $main-color;
 
-    h3 {
+    h2 {
         display: flex;
         flex-direction: column;
         border-bottom: 5px solid #fff;
-        color: black;
-
+        color: $main-color;
         margin-left: 20px;
-        ;
+        @include responsive('phone') {
+           font-size:30px;
+           
+        }
     }
 
 
@@ -235,6 +283,12 @@ header {
             border-radius: 10px;
             background-color: $main-color;
             padding: $size;
+            @include responsive('tablet') {
+                font-size:10px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            
         }
     }
 }

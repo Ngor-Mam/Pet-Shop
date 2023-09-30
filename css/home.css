@@ -184,6 +184,11 @@ header img {
   justify-content: space-between;
   padding: 20px 50px;
 }
+@media screen and (max-width: 600px) {
+  .list-down {
+    padding: 20px 20px;
+  }
+}
 .list-down h3 {
   display: flex;
   flex-direction: column;
@@ -192,9 +197,21 @@ header img {
   font-size: 20px;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 600px) {
+  .list-down h3 {
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    margin: 5px;
+  }
+}
 .list-down a {
   color: #fff;
   font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .list-down a {
+    font-size: 13px;
+  }
 }
 .list-down a:hover {
   color: yellow;
@@ -203,6 +220,11 @@ header img {
 
 .content {
   padding: 20px 50px;
+}
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 20px 10px;
+  }
 }
 
 .produce {
@@ -222,15 +244,32 @@ header img {
   font-weight: bold;
   color: #1A76D1;
 }
+@media screen and (max-width: 600px) {
+  .title h2 {
+    font-size: 30px;
+  }
+}
 
 .card {
   padding: 20px 0px;
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+  }
+}
 
 .new-produce-card {
   width: 23%;
+}
+@media screen and (max-width: 600px) {
+  .new-produce-card {
+    width: 48%;
+  }
 }
 .new-produce-card img {
   width: 100%;
@@ -241,6 +280,18 @@ header img {
   padding: 20px 20px;
   font-size: 25px;
   background-color: #1A76D1;
+}
+@media screen and (max-width: 1024px) {
+  .describe {
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .describe {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
 }
 .describe strong {
   color: yellow;
@@ -267,12 +318,17 @@ header img {
   background-color: #fff;
   border-bottom: 5px solid #1A76D1;
 }
-.sale-title h3 {
+.sale-title h2 {
   display: flex;
   flex-direction: column;
   border-bottom: 5px solid #fff;
-  color: black;
+  color: #1A76D1;
   margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .sale-title h2 {
+    font-size: 30px;
+  }
 }
 
 .salepro-card {
@@ -305,6 +361,13 @@ header img {
   background-color: #1A76D1;
   padding: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .sale-card form button {
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
 
 footer {
   display: flex;
@@ -314,6 +377,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
   footer {
+    display: flex;
     flex-wrap: wrap;
   }
 }

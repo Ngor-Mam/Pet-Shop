@@ -5,27 +5,31 @@ footer{
     padding: 20px 50px;
     justify-content: space-between;
     background-color: $main-color;
-    @include responsive(phone){
+    @include responsive('phone'){
+        display: flex;
         flex-wrap: wrap;
+       
     }
 }
 .block{
     display: flex;
     flex-direction: column;
     color: #fff;
+    
     a{
         display: flex;
         align-items: center;
         padding: 5px;
         color: #fff;
+        
     }
     iframe{
         height: 300px;
-        @include responsive(tablet){
+        @include responsive('tablet'){
             width: 250px;
             height: 250px;
         }
-        @include responsive(phone){
+        @include responsive('phone'){
             width: 380px;
             height: 200px;
         }
