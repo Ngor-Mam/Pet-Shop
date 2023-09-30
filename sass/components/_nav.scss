@@ -50,10 +50,10 @@ nav{
 }
 form{
     @include centersnojus;
-    @include responsive(tablet){
+    @include responsive('tablet'){
 
     }
-    @include responsive(phone){
+    @include responsive('phone'){
         display: none;
     }
     :hover{

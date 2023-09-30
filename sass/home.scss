@@ -63,6 +63,13 @@ header {
             padding: $size;
             border: 3px solid $main-color;
         }
+        @include responsive('phone') {
+            font-size: 25px;
+            border-radius: $size;
+            padding: $size;
+            border: 3px solid $main-color;
+           
+        }
     }
 
     img {
@@ -274,7 +281,9 @@ header {
         bottom: 15%;
         left: 25%;
         right: 25%;
-
+        @include responsive('phone') {
+            display: block;
+        }
         button {
             border: none;
             color: #fff;
@@ -283,11 +292,22 @@ header {
             border-radius: 10px;
             background-color: $main-color;
             padding: $size;
-            @include responsive('tablet') {
+            @include responsive('phone') {
                 font-size:10px;
-                padding: 10px;
+                padding: 5px;
                 border-radius: 5px;
+                background:$main-color;
+                margin-bottom: 13px;
             }
+            @include responsive('tablet') {
+                font-size:15px;
+                
+                padding: 5px;
+                border-radius: 5px;
+                background:$main-color;
+                
+            }
+            
             
         }
     }
