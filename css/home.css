@@ -410,19 +410,23 @@ footer {
 }
 @media screen and (max-width: 600px) {
   .block {
-    border: 1px solid;
     width: 100%;
   }
 }
 .block ul li :hover {
   color: rgb(0, 229, 255);
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid rgb(0, 229, 255);
 }
 .block a {
   display: flex;
   align-items: center;
   padding: 5px;
   color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .block a {
+    padding: 0px;
+  }
 }
 .block iframe {
   height: 300px;
