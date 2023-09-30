@@ -328,6 +328,16 @@ main .aside .aside-bottom .group-img img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .value .card-box {
+    text-align: start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .value .card-box {
+    text-align: start;
+  }
+}
 .value .card-box .box {
   width: 46%;
   background-color: white;
@@ -363,7 +373,7 @@ main .aside .aside-bottom .group-img img {
 @media screen and (max-width: 600px) {
   .value .card-box .box h4 {
     font-size: 14px;
-    padding: 15px;
+    padding: 20px;
   }
 }
 .value .card-box .box p {

@@ -220,6 +220,12 @@ main{
         text-align: center;
         justify-content: center;
         align-items: center;
+        @include responsive('tablet'){
+            text-align: start;
+        }
+        @include responsive('phone'){
+            text-align: start;
+        }
         .box{
             width: 46%;
             background-color:$text-button;
@@ -227,7 +233,6 @@ main{
             border-radius: 15px;
             padding:23px;
             margin: 15px;
-            
             @include responsive('tablet'){
                 width: 43%;
             }
@@ -248,7 +253,7 @@ main{
                 }
                 @include responsive('phone'){
                     font-size: 14px;
-                    padding: 15px ;
+                    padding: 20px ;
                 }
             }
             p{
