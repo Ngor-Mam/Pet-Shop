@@ -333,11 +333,6 @@ footer {
   flex-direction: column;
   color: #fff;
 }
-@media screen and (max-width: 600px) {
-  .block {
-    width: 50%;
-  }
-}
 .block a {
   display: flex;
   align-items: center;

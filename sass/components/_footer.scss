@@ -8,20 +8,20 @@ footer{
     @include responsive('phone'){
         display: flex;
         flex-wrap: wrap;
+       
     }
 }
 .block{
     display: flex;
     flex-direction: column;
     color: #fff;
-    @include responsive('phone'){
-        width: 50%;
-    }
+    
     a{
         display: flex;
         align-items: center;
         padding: 5px;
         color: #fff;
+        
     }
     iframe{
         height: 300px;
