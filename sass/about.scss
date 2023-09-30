@@ -1,159 +1,234 @@
 @import "_main";
 
-*{
+* {
     @include univer;
 }
-body{
+
+body {
     @include body;
     font-size: 20px;
 }
+
 @import "./components/nav";
-.menu ul li:nth-child(3) a{
+
+.menu ul li:nth-child(3) a {
     color: $main-color;
-    border-bottom:5px solid;
+    border-bottom: 5px solid;
 
-}  
+}
 
 
-header{
+header {
     background-color: $bg-color;
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
+
     .header-left {
         position: relative;
         display: inline-block;
         padding-top: 50px;
         font-size: 30px;
-        color:$text-color;
+        color: $text-color;
     }
-      button{
-                padding: 10px 50px;
-                background-color: $main-color;
-                color: #fff;
-                border: none;
-                font-size: 20px;
-            }
-      .header-left-content {
+
+    button {
+        padding: 10px 50px;
+        background-color: $main-color;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+    }
+
+    .header-left-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
         min-width: 500px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         padding: 12px 16px;
         z-index: 1;
-      }
-      
-      .header-left:hover {
+    }
+
+    .header-left:hover {
         .header-left-content {
             display: block;
             font-size: 20px;
             color: black;
-      }
-      }
-    
+        }
+    }
+
 }
-main{
+
+main {
     background-color: #fff;
-    .about-us01{
+    .about-us01 {
         display: flex;
         justify-content: space-between;
         padding: 0px 50px;
-        .main_left{
+        @include responsive('phone'){
+            padding: 5px 20px;
+        }
+
+        .main_left {
             width: 50%;
             padding: 50px 0px;
+            @include responsive('tablet'){
+                padding: 10px 30px;
+            }
+            @include responsive('phone'){
+                padding: 25px 0px;
+            }
         }
-        h1{
+
+        h1 {
             color: $main-color;
+            @include responsive('phone') {
+                font-size: 9px;
+            }
         }
-        .main_right{
+
+        p {
+            font-size: 20px;
+            @include responsive('tablet'){
+                font-size: 19px;
+            }
+            @include responsive('phone') {
+                font-size: 7px;
+            }
+        }
+
+        .main_right {
             text-align: center;
             padding: 50px 0px;
-            img{
+
+            img {
                 width: 65%;
                 border-radius: 50%;
                 border: 8px solid $main-color;
+
+                @include responsive('tablet') {
+                    border: 7px solid $main-color;
+                    margin-top: 100px;
+                }
             }
-            h3{
+
+            h3 {
                 color: #6C3838;
+
+                @include responsive('phone') {
+                    font-size: 9px;
+                }
             }
         }
     }
-    .about-us02{
+
+    .about-us02 {
         padding: 0px 50px;
-        .section-top{
+        // @include responsive('phone'){
+        //     padding: 5px 20px;
+        // }
+        .section-top {
             text-align: center;
             padding: 20px;
-            h1{
+
+            h1 {
                 color: $main-color;
                 font-weight: bold;
                 padding: 10px;
+
+                @include responsive('phone') {
+                    font-size: 25px;
+                }
             }
         }
-        .section-bottom{
+
+        .section-bottom {
             display: flex;
             justify-content: space-between;
-            .section-img{
+            .section-img {
                 width: 25%;
-                padding: 20px 0px; 
+                padding: 20px 0px;
                 text-align: center;
-                img{
+                @include responsive('tablet'){
+                    width: 31%;
+                }
+
+                img {
                     width: 100%;
                     box-shadow: $main-color 5px 5px 2px 2px;
-
                 }
-                h3{
+
+                h3 {
                     padding: 10px;
                     color: #6C3838;
+
+                    @include responsive('tablet') {
+                        font-size: 12px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
                 }
 
             }
-           
+
         }
     }
-    .aside{
-        background-color:$main-color;
+
+    .aside {
+        background-color: $main-color;
         color: #fff;
-        padding: 20px 0px; 
-        .aside-top{
+        padding: 20px 0px;
+
+        .aside-top {
             display: flex;
             justify-content: space-between;
             padding: 20px 50px;
             font-size: 20px;
-            .aside-top_left{
+
+            .aside-top_left {
                 width: 30%;
                 padding: 20px 0px;
-                
+
             }
-            .aside-top_right{
+
+            .aside-top_right {
                 width: 70%;
                 padding: 20px 0px;
             }
         }
+
         .aside-center {
             display: flex;
             justify-content: space-between;
             padding: 20px 50px;
-            .center_left{
+
+            .center_left {
                 width: 70%;
                 padding: 20px 0px;
 
             }
-            .center_right{
+
+            .center_right {
                 width: 30%;
                 padding: 20px 0px;
                 display: flex;
                 justify-content: end;
             }
-            
+
         }
-        .aside-bottom{
+
+        .aside-bottom {
             padding: 20px 50px;
             display: flex;
             justify-content: space-between;
-            .group-img{
+
+            .group-img {
                 width: 25%;
-                img{
+
+                img {
                     width: 100%;
                     border: 5px solid #fff;
                     border-radius: 5px;
@@ -166,62 +241,72 @@ main{
 
 // ================================
 
-.value{
+.value {
     padding: 20px 50px;
-    h2{
-        color:$main-color;
+
+    h2 {
+        color: $main-color;
         text-transform: uppercase;
         font-size: 30px;
         text-align: center;
     }
-    .card-box{
+
+    .card-box {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        .box{
+
+        .box {
             width: 47.5%;
-            background-color:$text-button;
+            background-color: $text-button;
             box-shadow: $main-color 5px 5px 2px 2px;
             border-radius: 15px;
-            padding:23px;
+            padding: 23px;
             margin: 15px;
-            
-            h4{
-                padding: 30px ;
+
+            h4 {
+                padding: 30px;
                 border-radius: 10px;
-                color:$text-button;
-                background:$main-color;
+                color: $text-button;
+                background: $main-color;
                 text-transform: uppercase;
                 font-size: 25px;
             }
-            p{
+
+            p {
                 padding: 60px 20px 60px 20px;
             }
 
         }
     }
 }
-.community{
-    padding:0px 50px ;
+
+.community {
+    padding: 0px 50px;
     background-color: #ffff;
     text-align: center;
-    h2{
-        color:$main-color ;
+
+    h2 {
+        color: $main-color ;
         padding: 20px;
         text-transform: uppercase;
         font-size: 30px;
     }
-    p{
+
+    p {
         padding-left: 10px;
     }
-    .img{
+
+    .img {
         display: flex;
-        padding: 10px ;
+        padding: 10px;
         align-items: center;
         text-align: center;
-        .card-img{
-            padding: 50px 50px ;
-            img{
+
+        .card-img {
+            padding: 50px 50px;
+
+            img {
                 width: 100%;
             }
         }
