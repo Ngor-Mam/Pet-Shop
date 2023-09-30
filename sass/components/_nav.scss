@@ -2,84 +2,88 @@
 @import "_groupmixins";
 @import "../main";
 
-nav{
+nav {
     width: $width;
     height: 100px;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #fff;
     @include space;
     padding: $nav-padding;
-    @include responsive(tablet){
+
+    @include responsive(tablet) {
         height: 80px;
-        // background-color: aqua;
     }
-    @include responsive(phone){
+
+    @include responsive(phone) {
         height: 50px;
-        // background-color: aqua;
     }
-    .menu{
+
+    .menu {
         @include centersnojus;
-    } 
-    ul{
+    }
+
+    ul {
         display: flex;
-        li{
+
+        li {
             padding: $size+10;
             font-size: $size;
             font-weight: bold;
-            @include responsive(tablet){
+
+            @include responsive(tablet) {
                 padding: $size;
             }
-            @include responsive(phone){
+
+            @include responsive(phone) {
                 padding: $size - 10;
             }
-            a{
+
+            a {
                 color: $text-color;
                 text-transform: uppercase;
-                @include responsive(phone){
+
+                @include responsive(phone) {
                     text-transform: capitalize;
                 }
             }
-            a:hover{
+
+            a:hover {
                 color: $main-color;
             }
-           
-        }
-    }  
-}
-form{
-    @include centersnojus;
-    @include responsive('tablet'){
 
+        }
     }
-    @include responsive('phone'){
-        display: none;
-    }
-    :hover{
-        color: $main-color;
-        box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
-    }
-    input{
-        margin-left: auto;
-        width: 50%;
-        padding: $size - 5;
-        font-size: $size;
-        border-radius: 20px 0px 0px 20px; 
-        background-color: #dedbdb;
-        border: none;
-        color: $text-color;
-        ::placeholder{
-            font-size: 20px;
+
+    form {
+        @include centersnojus;
+
+        @include responsive(phone) {
+            display: none;
+        }
+        input {
+            margin-left: auto;
+            width: 50%;
+            padding: $size - 5;
+            font-size: $size;
+            border-radius: 20px 0px 0px 20px;
+            background-color: #dedbdb;
+            border: none;
+            color: $text-color;
+    
+            ::placeholder {
+                font-size: 20px;
+            }
+        }
+    
+        .material-icons {
+            font-size: 32px;
+            border-radius: 0px 20px 20px 0px;
+            background-color: #c5c5c2;
+            padding: $size - 7.5;
             color: $main-color;
         }
     }
-    .material-icons{
-        font-size: 32px;
-        border-radius: 0px 20px 20px 0px; 
-        background-color: #c5c5c2;
-        padding: $size - 7.5;
-        border: none;
-    }
+ 
 }
-
