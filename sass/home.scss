@@ -114,7 +114,14 @@ header {
             margin: 5px;
         }
     }
-
+    ul{
+        li{
+            :hover{
+                color: rgb(0, 229, 255);
+                border-bottom: 1px solid rgb(0, 229, 255);
+            }
+        }
+    }  
     a {
         color: #fff;
         font-size: $size;
@@ -314,4 +321,5 @@ header {
 }
 
 
-@import "./components/footer"
+@import "./components/footer";
+
