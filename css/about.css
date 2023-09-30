@@ -121,6 +121,16 @@ header {
   justify-content: space-between;
   padding: 0px 50px;
 }
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 5px 20px;
+  }
+}
 header .header-left {
   position: relative;
   display: inline-block;
@@ -128,12 +138,37 @@ header .header-left {
   font-size: 30px;
   color: #2C2D3F;
 }
+@media screen and (max-width: 1024px) {
+  header .header-left {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .header-left {
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 header button {
   padding: 10px 50px;
   background-color: #1A76D1;
   color: #fff;
   border: none;
   font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  header button {
+    padding: 5px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header button {
+    padding: 5px 30px;
+    font-size: 15px;
+  }
 }
 header .header-left-content {
   display: none;
@@ -148,6 +183,19 @@ header .header-left:hover .header-left-content {
   display: block;
   font-size: 20px;
   color: black;
+}
+header .header-right img {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  header .header-right img {
+    width: 99%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .header-right img {
+    width: 90%;
+  }
 }
 
 main {
@@ -277,6 +325,8 @@ main .aside .aside-bottom .group-img img {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .value .card-box .box {
   width: 47%;
@@ -288,12 +338,12 @@ main .aside .aside-bottom .group-img img {
 }
 @media screen and (max-width: 1024px) {
   .value .card-box .box {
-    width: 46%;
+    width: 44%;
   }
 }
 @media screen and (max-width: 600px) {
   .value .card-box .box {
-    width: 43%;
+    width: 40%;
   }
 }
 .value .card-box .box h4 {
@@ -370,7 +420,6 @@ main .aside .aside-bottom .group-img img {
 @media screen and (max-width: 600px) {
   .community p {
     padding-left: 20px;
-    font-size: 20px;
   }
 }
 .community .img {

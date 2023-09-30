@@ -20,13 +20,28 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
+    @include responsive('tablet'){
+        padding: 10px 30px;
+    }
+    @include responsive('phone'){
+        padding: 5px 20px;
+    }
     .header-left {
         position: relative;
         display: inline-block;
         padding-top: 50px;
         font-size: 30px;
         color:$text-color;
-       
+        @include responsive('tablet'){
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        @include responsive('phone'){
+            font-size: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
       button{
                 padding: 10px 50px;
@@ -34,6 +49,14 @@ header{
                 color: #fff;
                 border: none;
                 font-size: 20px;
+                @include responsive('tablet'){
+                    padding: 5px 30px;
+                }
+                @include responsive('phone'){
+                    padding: 5px 30px;
+                    font-size: 15px;
+                    
+                }
             }
       .header-left-content {
         display: none;
@@ -52,7 +75,17 @@ header{
             color: black;
       }
       }
-    
+    .header-right{
+        img{
+            width: 100%;
+            @include responsive('tablet'){
+                width: 99%;
+            }
+            @include responsive('phone'){
+                width: 90%;
+            }
+        }
+    }
 }
 main{
     background-color: #fff;
@@ -185,6 +218,8 @@ main{
         display: flex;
         flex-wrap: wrap;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         .box{
             width: 47%;
             background-color:$text-button;
@@ -192,11 +227,14 @@ main{
             border-radius: 15px;
             padding:23px;
             margin: 15px;
+            
             @include responsive('tablet'){
-                width: 46%;
+                width: 44%;
+                
+
             }
             @include responsive('phone'){
-                width: 43%;
+                width: 40%;
             }
             
             h4{
@@ -257,7 +295,6 @@ main{
         }
         @include responsive('phone'){
             padding-left: 20px;
-            font-size: 20px;
         }
     }
     .img{
