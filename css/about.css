@@ -329,7 +329,7 @@ main .aside .aside-bottom .group-img img {
   align-items: center;
 }
 .value .card-box .box {
-  width: 47%;
+  width: 46%;
   background-color: white;
   box-shadow: #1A76D1 5px 5px 2px 2px;
   border-radius: 15px;
@@ -338,7 +338,7 @@ main .aside .aside-bottom .group-img img {
 }
 @media screen and (max-width: 1024px) {
   .value .card-box .box {
-    width: 44%;
+    width: 43%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -362,7 +362,7 @@ main .aside .aside-bottom .group-img img {
 }
 @media screen and (max-width: 600px) {
   .value .card-box .box h4 {
-    font-size: 15px;
+    font-size: 14px;
     padding: 15px;
   }
 }
