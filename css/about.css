@@ -121,6 +121,16 @@ header {
   justify-content: space-between;
   padding: 0px 50px;
 }
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 5px 20px;
+  }
+}
 header .header-left {
   position: relative;
   display: inline-block;
@@ -361,8 +371,23 @@ main .aside .aside-bottom .group-img img {
   text-transform: uppercase;
   font-size: 30px;
 }
+@media screen and (max-width: 600px) {
+  .community h2 {
+    padding: 10px;
+  }
+}
 .community p {
   padding-left: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .community p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .community p {
+    padding-left: 20px;
+  }
 }
 .community .img {
   display: flex;
