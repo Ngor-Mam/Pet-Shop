@@ -323,6 +323,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
   footer {
+    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -331,6 +332,11 @@ footer {
   display: flex;
   flex-direction: column;
   color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .block {
+    width: 50%;
+  }
 }
 .block a {
   display: flex;

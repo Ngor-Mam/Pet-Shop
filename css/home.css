@@ -244,6 +244,11 @@ header img {
   font-weight: bold;
   color: #1A76D1;
 }
+@media screen and (max-width: 600px) {
+  .title h2 {
+    font-size: 30px;
+  }
+}
 
 .card {
   padding: 20px 0px;
@@ -313,12 +318,17 @@ header img {
   background-color: #fff;
   border-bottom: 5px solid #1A76D1;
 }
-.sale-title h3 {
+.sale-title h2 {
   display: flex;
   flex-direction: column;
   border-bottom: 5px solid #fff;
-  color: black;
+  color: #1A76D1;
   margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .sale-title h2 {
+    font-size: 30px;
+  }
 }
 
 .salepro-card {
@@ -360,6 +370,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
   footer {
+    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -368,6 +379,11 @@ footer {
   display: flex;
   flex-direction: column;
   color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .block {
+    width: 50%;
+  }
 }
 .block a {
   display: flex;

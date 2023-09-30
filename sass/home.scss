@@ -150,7 +150,12 @@ header {
         padding: $size 0px 0px 0px;
         font-weight: bold;
         color: $main-color;
+        @include responsive('phone') {
+            font-size:30px;
+            
+         }
     }
+
 }
 
 
@@ -231,14 +236,16 @@ header {
     background-color: #fff;
     border-bottom: 5px solid $main-color;
 
-    h3 {
+    h2 {
         display: flex;
         flex-direction: column;
         border-bottom: 5px solid #fff;
-        color: black;
-
+        color: $main-color;
         margin-left: 20px;
-        ;
+        @include responsive('phone') {
+           font-size:30px;
+           
+        }
     }
 
 
@@ -276,6 +283,7 @@ header {
             border-radius: 10px;
             background-color: $main-color;
             padding: $size;
+            
         }
     }
 }
