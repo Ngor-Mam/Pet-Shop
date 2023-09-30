@@ -171,6 +171,7 @@ main .about-us01 {
 @media screen and (max-width: 600px) {
   main .about-us01 {
     padding: 5px 20px;
+    flex-direction: column;
   }
 }
 main .about-us01 .main_left {
@@ -180,6 +181,7 @@ main .about-us01 .main_left {
 @media screen and (max-width: 1024px) {
   main .about-us01 .main_left {
     padding: 10px 30px;
+    width: auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -192,7 +194,7 @@ main .about-us01 h1 {
 }
 @media screen and (max-width: 600px) {
   main .about-us01 h1 {
-    font-size: 9px;
+    font-size: 30px;
   }
 }
 main .about-us01 p {
@@ -200,12 +202,12 @@ main .about-us01 p {
 }
 @media screen and (max-width: 1024px) {
   main .about-us01 p {
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 600px) {
   main .about-us01 p {
-    font-size: 7px;
+    font-size: 12px;
   }
 }
 main .about-us01 .main_right {
@@ -223,16 +225,27 @@ main .about-us01 .main_right img {
     margin-top: 100px;
   }
 }
+@media screen and (max-width: 600px) {
+  main .about-us01 .main_right img {
+    margin-top: 1px;
+    width: 70%;
+  }
+}
 main .about-us01 .main_right h3 {
   color: #6C3838;
 }
 @media screen and (max-width: 600px) {
   main .about-us01 .main_right h3 {
-    font-size: 9px;
+    font-size: 20px;
   }
 }
 main .about-us02 {
   padding: 0px 50px;
+}
+@media screen and (max-width: 600px) {
+  main .about-us02 {
+    padding: 5px 20px;
+  }
 }
 main .about-us02 .section-top {
   text-align: center;
@@ -245,12 +258,18 @@ main .about-us02 .section-top h1 {
 }
 @media screen and (max-width: 600px) {
   main .about-us02 .section-top h1 {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 main .about-us02 .section-bottom {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  main .about-us02 .section-bottom {
+    width: auto;
+    flex-wrap: wrap;
+  }
 }
 main .about-us02 .section-bottom .section-img {
   width: 25%;
@@ -262,9 +281,20 @@ main .about-us02 .section-bottom .section-img {
     width: 31%;
   }
 }
+@media screen and (max-width: 600px) {
+  main .about-us02 .section-bottom .section-img {
+    width: auto;
+    flex-wrap: wrap;
+  }
+}
 main .about-us02 .section-bottom .section-img img {
   width: 100%;
   box-shadow: #1A76D1 5px 5px 2px 2px;
+}
+@media screen and (max-width: 600px) {
+  main .about-us02 .section-bottom .section-img img {
+    width: 70%;
+  }
 }
 main .about-us02 .section-bottom .section-img h3 {
   padding: 10px;
@@ -272,55 +302,109 @@ main .about-us02 .section-bottom .section-img h3 {
 }
 @media screen and (max-width: 1024px) {
   main .about-us02 .section-bottom .section-img h3 {
-    font-size: 12px;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .about-us02 .section-bottom .section-img h3 {
+    font-size: 15px;
   }
 }
 main .about-us02 .section-bottom .section-img p {
   font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  main .about-us02 .section-bottom .section-img p {
+    font-size: 9px;
+  }
 }
 main .aside {
   background-color: #1A76D1;
   color: #fff;
   padding: 20px 0px;
 }
-main .aside .aside-top {
+@media screen and (max-width: 600px) {
+  main .aside {
+    width: auto;
+    flex-wrap: wrap;
+  }
+}
+main .aside-top {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
   font-size: 20px;
 }
-main .aside .aside-top .aside-top_left {
+@media screen and (max-width: 600px) {
+  main .aside-top {
+    flex-wrap: wrap;
+  }
+}
+main .aside-top .aside-top_left {
   width: 30%;
-  padding: 20px 0px;
 }
-main .aside .aside-top .aside-top_right {
+@media screen and (max-width: 600px) {
+  main .aside-top .aside-top_left {
+    width: 40%;
+    font-size: 21px;
+  }
+}
+main .aside-top .aside-top_right {
   width: 70%;
-  padding: 20px 0px;
 }
-main .aside .aside-center {
+@media screen and (max-width: 600px) {
+  main .aside-top .aside-top_right {
+    font-size: 20px;
+    width: auto;
+  }
+}
+main .aside-center {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
 }
-main .aside .aside-center .center_left {
+@media screen and (max-width: 600px) {
+  main .aside-center {
+    padding: 5px 50px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+main .aside-center .center_left {
   width: 70%;
-  padding: 20px 0px;
 }
-main .aside .aside-center .center_right {
+@media screen and (max-width: 600px) {
+  main .aside-center .center_left {
+    font-size: 20px;
+    width: auto;
+  }
+}
+main .aside-center .center_right {
   width: 30%;
-  padding: 20px 0px;
-  display: flex;
-  justify-content: end;
 }
-main .aside .aside-bottom {
+main .aside-bottom {
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
 }
-main .aside .aside-bottom .group-img {
+@media screen and (max-width: 600px) {
+  main .aside-bottom {
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
+main .aside-bottom .group-img {
   width: 25%;
+  background: thistle;
 }
-main .aside .aside-bottom .group-img img {
+@media screen and (max-width: 600px) {
+  main .aside-bottom .group-img {
+    width: auto;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+main .aside-bottom .group-img img {
   width: 100%;
   border: 5px solid #fff;
   border-radius: 5px;
