@@ -26,6 +26,7 @@ header {
 
     @include responsive('tablet'){
         padding: 10px 30px;
+        justify-content: flex-start;
     }
     @include responsive('phone'){
         padding: 5px 20px;
@@ -36,6 +37,14 @@ header {
         padding-top: 50px;
         font-size: 30px;
         color: $text-color;
+        @include responsive('tablet'){
+            font-size: 25px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        @include responsive('phone'){
+            font-size: 15px;
+        }
     }
       button{
                 padding: 10px 50px;
@@ -52,6 +61,17 @@ header {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         padding: 12px 16px;
         z-index: 1;
+    }
+    .header-right{
+        img{
+            width: 100%;
+        }
+        @include responsive('tablet'){
+            width: 100%;
+        }
+        @include responsive('phone'){
+            width: 80%;
+        }
     }
 
     .header-left:hover {
@@ -129,9 +149,6 @@ main {
 
     .about-us02 {
         padding: 0px 50px;
-        // @include responsive('phone'){
-        //     padding: 5px 20px;
-        // }
         .section-top {
             text-align: center;
             padding: 20px;
@@ -247,44 +264,42 @@ main {
 
 .value {
     padding: 20px 50px;
+    @include responsive('tablet'){
+        padding: 10px 30px;
+    }
+    @include responsive('phone'){
+        padding: 5px 20px;
+    }
     h2{
         color:$main-color;
         text-transform: uppercase;
         font-size: 30px;
         text-align: center;
     }
-
     .card-box {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-<<<<<<< HEAD
         justify-content: center;
-        align-items: center;
         @include responsive('tablet'){
             text-align: start;
         }
         @include responsive('phone'){
             text-align: start;
         }
-=======
->>>>>>> 291eb2cbfdba8268e37fc3beac370191b8204a70
         .box{
-            width: 47.5%;
+            width: 46%;
             background-color:$text-button;
             box-shadow: $main-color 5px 5px 2px 2px;
             border-radius: 15px;
             padding: 23px;
             margin: 15px;
-<<<<<<< HEAD
             @include responsive('tablet'){
                 width: 43%;
             }
             @include responsive('phone'){
                 width: 40%;
             }
-=======
->>>>>>> 291eb2cbfdba8268e37fc3beac370191b8204a70
             
             h4{
                 padding: 30px ;
@@ -293,20 +308,26 @@ main {
                 background: $main-color;
                 text-transform: uppercase;
                 font-size: 25px;
-<<<<<<< HEAD
+                text-align: center;
                 @include responsive('tablet'){
                     font-size: 18;
                     padding: 20px ;
                 }
                 @include responsive('phone'){
-                    font-size: 14px;
-                    padding: 20px ;
+                    font-size: 15px;
+                    padding: 15px ;
                 }
-=======
->>>>>>> 291eb2cbfdba8268e37fc3beac370191b8204a70
             }
             p{
                 padding: 60px 20px 60px 20px;
+                @include responsive('tablet'){
+                    padding: 30px 10px;
+                    
+                }
+                @include responsive('phone'){
+                    padding: 20px 5px;
+                    font-size: 15px;
+                }
             }
 
         }
@@ -317,6 +338,13 @@ main {
     padding: 0px 50px;
     background-color: #ffff;
     text-align: center;
+    @include responsive('tablet'){
+        padding: 10px 30px;
+    }
+    @include responsive('phone'){
+        padding: 5px 20px;
+        text-align: start;
+    }
     h2{
         color:$main-color ;
         padding: 20px;
@@ -342,10 +370,36 @@ main {
         padding: 10px;
         align-items: center;
         text-align: center;
+        @include responsive('phone'){
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+        }
         .card-img{
             padding: 50px 50px ;
+            @include responsive('phone'){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 20px;
+            }
+            p{
+                padding: 20px 10px ;
+                @include responsive('tablet'){
+                    padding: none;
+                }
+                @include responsive('phone'){
+                    padding-left: 20px;
+                }
+            }
             img{
                 width: 100%;
+                @include responsive('tablet'){
+                    width: 90%;
+                }
+                @include responsive('phone'){
+                    width: 40%;
+                }
             }
         }
     }
