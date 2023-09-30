@@ -257,6 +257,16 @@ main .aside .aside-bottom .group-img img {
 .value {
   padding: 20px 50px;
 }
+@media screen and (max-width: 1024px) {
+  .value {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .value {
+    padding: 5px 20px;
+  }
+}
 .value h2 {
   color: #1A76D1;
   text-transform: uppercase;
@@ -269,12 +279,22 @@ main .aside .aside-bottom .group-img img {
   text-align: center;
 }
 .value .card-box .box {
-  width: 47.5%;
+  width: 47%;
   background-color: white;
   box-shadow: #1A76D1 5px 5px 2px 2px;
   border-radius: 15px;
   padding: 23px;
   margin: 15px;
+}
+@media screen and (max-width: 1024px) {
+  .value .card-box .box {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .value .card-box .box {
+    width: 43%;
+  }
 }
 .value .card-box .box h4 {
   padding: 30px;
@@ -284,8 +304,32 @@ main .aside .aside-bottom .group-img img {
   text-transform: uppercase;
   font-size: 25px;
 }
+@media screen and (max-width: 1024px) {
+  .value .card-box .box h4 {
+    font-size: 18;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .value .card-box .box h4 {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
 .value .card-box .box p {
-  padding: 60px 20px 60px 20px;
+  padding: 60px 20px;
+}
+@media screen and (max-width: 600px) {
+  .value .card-box .box p {
+    padding: 20px 15px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .value .card-box .box p {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
 }
 
 .community {
@@ -293,14 +337,42 @@ main .aside .aside-bottom .group-img img {
   background-color: white;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .community {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .community {
+    padding: 10px 30px;
+    text-align: start;
+  }
+}
 .community h2 {
   color: #1A76D1;
   padding: 20px;
   text-transform: uppercase;
   font-size: 30px;
 }
+@media screen and (max-width: 600px) {
+  .community h2 {
+    font-size: 25px;
+    padding: 10px;
+  }
+}
 .community p {
   padding-left: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .community p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .community p {
+    padding-left: 20px;
+    font-size: 15px;
+  }
 }
 .community .img {
   display: flex;
@@ -308,11 +380,44 @@ main .aside .aside-bottom .group-img img {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .community .img {
+    flex-direction: column;
+    text-align: start;
+  }
+}
 .community .img .card-img {
   padding: 50px 50px;
 }
+@media screen and (max-width: 600px) {
+  .community .img .card-img {
+    display: flex;
+    flex-direction: column-;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.community .img .card-img p {
+  padding: 20px 10px;
+}
+@media screen and (max-width: 1024px) {
+  .community .img .card-img p {
+    padding: 10px 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .community .img .card-img p {
+    padding: 10px;
+  }
+}
 .community .img .card-img img {
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .community .img .card-img img {
+    width: 40%;
+  }
 }
 
 footer {
