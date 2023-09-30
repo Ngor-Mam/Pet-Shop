@@ -90,6 +90,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: $size 50px;
+    @include responsive('phone') {
+        padding: $size 20px;
+    }
 
     h3 {
         display: flex;
@@ -98,11 +101,21 @@ header {
         color: #fff;
         font-size: $size;
         margin-bottom: 15px;
+        @include responsive('phone') {
+            font-size: 15px;
+            border-bottom: 1px solid #fff;
+            margin: 5px;
+        }
     }
 
     a {
         color: #fff;
         font-size: $size;
+        @include responsive('phone') {
+            font-size: 13px;
+            
+            
+        }
     }
 
     a:hover {
