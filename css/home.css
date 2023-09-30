@@ -120,11 +120,30 @@ header {
   padding: 20px 50px;
   background-color: #F6F6F1;
 }
+@media screen and (max-width: 600px) {
+  header {
+    background-image: url(../img/header-home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
 header .head-lift h1 {
   font-size: 50px;
   text-transform: uppercase;
   padding: 222px 0px 50px 0px;
   color: #2C2D3F;
+}
+@media screen and (max-width: 1024px) {
+  header .head-lift h1 {
+    padding: 20px 0px 50px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .head-lift h1 {
+    padding: 20px 0px 50px 0px;
+    color: white;
+    text-align: center;
+  }
 }
 header button {
   font-size: 40px;
@@ -134,11 +153,29 @@ header button {
   color: #6C3838;
   border: 5px solid #1A76D1;
 }
+@media screen and (max-width: 1024px) {
+  header button {
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #1A76D1;
+  }
+}
 header img {
   width: 50%;
   height: auto;
   border-radius: 10px;
   border: 10px solid #1A76D1;
+}
+@media screen and (max-width: 1024px) {
+  header img {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header img {
+    display: none;
+  }
 }
 
 .list-down {

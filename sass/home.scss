@@ -1,53 +1,97 @@
+@import "./mixins/responsive";
 @import "_main";
-*{
+
+* {
     @include univer;
 }
-body{
+
+body {
     @include body;
 }
-@import "./components/nav";
-.menu ul li:nth-child(1) a{
-    color: $main-color;
-    border-bottom:5px solid;
-}   
 
-header{
+@import "./components/nav";
+
+.menu ul li:nth-child(1) a {
+    color: $main-color;
+    border-bottom: 5px solid;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     padding: $size $size + 30;
     background-color: $bg-color;
-    .head-lift{
-        h1{
+
+    @include responsive('phone') {
+        background-image: url(../img/header-home.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+       
+
+    }
+
+    .head-lift {
+        h1 {
             font-size: 50px;
             text-transform: uppercase;
-            padding:222px 0px 50px 0px ;
-            color:$text-color;
+            padding: 222px 0px 50px 0px;
+            color: $text-color;
+
+            @include responsive('tablet') {
+                padding: 20px 0px 50px 0px;
+            }
+
+            @include responsive('phone') {
+                padding: 20px 0px 50px 0px;
+                color: $text-button;
+                text-align: center;
+            }
         }
     }
-    button{
+
+    button {
         font-size: 40px;
         border-radius: $size;
         padding: $size;
         text-transform: uppercase;
         color: #6C3838;
         border: 5px solid $main-color;
+
+        @include responsive('tablet') {
+            font-size: 30px;
+            border-radius: $size;
+            padding: $size;
+            border: 3px solid $main-color;
+        }
     }
-    img{
+
+    img {
         width: 50%;
-        height:auto;
+        height: auto;
         border-radius: 10px;
         border: 10px solid $main-color;
+
+        @include responsive('tablet') {
+            width: 40%;
+        }
+
+        @include responsive('phone') {
+            display: none;
+
+        }
     }
 }
+
 // .home-container{
 
 // }
-.list-down{
+.list-down {
     background-color: $main-color;
     display: flex;
     justify-content: space-between;
     padding: $size 50px;
-    h3{
+
+    h3 {
         display: flex;
         flex-direction: column;
         border-bottom: 2px solid #fff;
@@ -55,27 +99,33 @@ header{
         font-size: $size;
         margin-bottom: 15px;
     }
-    a{
+
+    a {
         color: #fff;
         font-size: $size;
     }
-    a:hover{
+
+    a:hover {
         color: yellow;
         border-bottom: 2px solid yellow;
-    } 
+    }
 }
-.content{
-    padding:$size 50px;
+
+.content {
+    padding: $size 50px;
 }
-.produce{
+
+.produce {
     display: flex;
     flex-direction: column;
 }
-.title{
+
+.title {
     display: flex;
     background-color: #fff;
     border-bottom: 5px solid $main-color;
-    h2{
+
+    h2 {
         padding-right: 10px;
         font-size: 40px;
         padding: $size 0px 0px 0px;
@@ -86,89 +136,103 @@ header{
 
 
 
-.card{
+.card {
     padding: $size 0px;
     display: flex;
     justify-content: space-between;
-    
+
 }
-.new-produce-card{
+
+.new-produce-card {
     width: 23%;
-    
-    img{
+
+    img {
         width: 100%;
     }
 }
-.describe{
+
+.describe {
     text-align: center;
     padding: $size $size;
     font-size: $size+5;
     background-color: $main-color;
-    strong{
+
+    strong {
         color: yellow;
-        
-        
+
+
     }
-    p{
+
+    p {
         color: $text-button;
     }
-    
+
 }
-.sale-produce{
+
+.sale-produce {
     display: flex;
-    h2{
+
+    h2 {
         padding: $size 0px 0px 0px;
         font-size: 40px;
-        font-weight:bold;
-        color:  $main-color;
+        font-weight: bold;
+        color: $main-color;
         background-color: #fff;
-       
+
     }
 }
-.sale-title{
+
+.sale-title {
 
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     background-color: #fff;
     border-bottom: 5px solid $main-color;
-    h3{
+
+    h3 {
         display: flex;
         flex-direction: column;
         border-bottom: 5px solid #fff;
         color: black;
-        
-        margin-left: 20px;;
+
+        margin-left: 20px;
+        ;
     }
-    
-    
+
+
 }
-.salepro-card{
+
+.salepro-card {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.sale-card{
+
+.sale-card {
     width: 23%;
-    
+
     padding: $size 0px;
     position: relative;
-    img{
+
+    img {
         width: 100%;
-        
+
         border: 3px solid #fff;
     }
-    form{
+
+    form {
         position: absolute;
         bottom: 15%;
         left: 25%;
         right: 25%;
-        button{
+
+        button {
             border: none;
-            color:#fff;
+            color: #fff;
             font-size: $size;
             font-weight: bold;
-            border-radius:10px;
+            border-radius: 10px;
             background-color: $main-color;
             padding: $size;
         }
