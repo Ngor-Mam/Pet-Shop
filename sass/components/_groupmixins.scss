@@ -33,3 +33,7 @@
         box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
     }
 }
+@mixin type{
+    padding: 5px;
+    width: 200px;
+}
