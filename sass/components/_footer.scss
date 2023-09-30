@@ -5,14 +5,28 @@ footer{
     padding: 20px 50px;
     justify-content: space-between;
     background-color: $main-color;
+    gap: 10px;
     @include responsive(phone){
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 .block{
     display: flex;
     flex-direction: column;
     color: #fff;
+    @include responsive(phone){
+        border: 1px solid;
+        width: 100%;
+    }
+    ul{
+        li{
+            :hover{
+                color: rgb(0, 229, 255);
+                border-bottom: 1px solid rgb(0, 229, 255);
+            }
+        }
+    }
     a{
         display: flex;
         align-items: center;
@@ -26,7 +40,7 @@ footer{
             height: 250px;
         }
         @include responsive(phone){
-            width: 380px;
+            width: 100%;
             height: 200px;
         }
     }

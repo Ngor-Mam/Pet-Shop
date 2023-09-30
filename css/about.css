@@ -70,21 +70,20 @@ nav ul li a {
 nav ul li a:hover {
   color: #1A76D1;
 }
-
-form {
+nav form {
   display: flex;
   align-items: center;
 }
 @media screen and (max-width: 600px) {
-  form {
+  nav form {
     display: none;
   }
 }
-form :hover {
+nav form :hover {
   color: #1A76D1;
   box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
 }
-form input {
+nav form input {
   margin-left: auto;
   width: 50%;
   padding: 15px;
@@ -94,20 +93,20 @@ form input {
   border: none;
   color: #2C2D3F;
 }
-form input ::-moz-placeholder {
+nav form input ::-moz-placeholder {
   font-size: 20px;
   color: #1A76D1;
 }
-form input ::placeholder {
+nav form input ::placeholder {
   font-size: 20px;
   color: #1A76D1;
 }
-form .material-icons {
+nav form .material-icons {
   font-size: 32px;
   border-radius: 0px 20px 20px 0px;
   background-color: #c5c5c2;
   padding: 12.5px;
-  border: none;
+  border: 1px 1px 1px 0px solid #1A76D1;
 }
 
 .menu ul li:nth-child(3) a {
@@ -320,10 +319,12 @@ footer {
   padding: 20px 50px;
   justify-content: space-between;
   background-color: #1A76D1;
+  gap: 10px;
 }
 @media screen and (max-width: 600px) {
   footer {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -331,6 +332,16 @@ footer {
   display: flex;
   flex-direction: column;
   color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .block {
+    border: 1px solid;
+    width: 100%;
+  }
+}
+.block ul li :hover {
+  color: rgb(0, 229, 255);
+  border-bottom: 1px solid rgb(0, 229, 255);
 }
 .block a {
   display: flex;
@@ -349,7 +360,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
   .block iframe {
-    width: 380px;
+    width: 100%;
     height: 200px;
   }
 }/*# sourceMappingURL=about.css.map */

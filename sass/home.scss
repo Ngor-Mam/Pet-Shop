@@ -55,14 +55,18 @@ header{
         font-size: $size;
         margin-bottom: 15px;
     }
+    ul{
+        li{
+            :hover{
+                color: rgb(0, 229, 255);
+                border-bottom: 1px solid rgb(0, 229, 255);
+            }
+        }
+    }  
     a{
         color: #fff;
         font-size: $size;
     }
-    a:hover{
-        color: yellow;
-        border-bottom: 2px solid yellow;
-    } 
 }
 .content{
     padding:$size 50px;
