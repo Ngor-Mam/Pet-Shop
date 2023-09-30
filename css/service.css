@@ -27,7 +27,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 2px 50px;
@@ -85,10 +85,6 @@ nav form {
     display: none;
   }
 }
-nav form :hover {
-  color: #1A76D1;
-  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
-}
 nav form input {
   margin-left: auto;
   width: 50%;
@@ -101,18 +97,16 @@ nav form input {
 }
 nav form input ::-moz-placeholder {
   font-size: 20px;
-  color: #1A76D1;
 }
 nav form input ::placeholder {
   font-size: 20px;
-  color: #1A76D1;
 }
 nav form .material-icons {
   font-size: 32px;
   border-radius: 0px 20px 20px 0px;
   background-color: #c5c5c2;
   padding: 12.5px;
-  border: 1px 1px 1px 0px solid #1A76D1;
+  color: #1A76D1;
 }
 
 .menu ul li:nth-child(2) a {
@@ -546,7 +540,7 @@ footer {
 }
 .block ul li :hover {
   color: rgb(0, 229, 255);
-  border-bottom: 1px solid rgb(0, 229, 255);
+  border-bottom: 2px solid yellow;
 }
 .block a {
   display: flex;

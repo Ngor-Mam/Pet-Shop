@@ -20,7 +20,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 2px 50px;
@@ -78,10 +78,6 @@ nav form {
     display: none;
   }
 }
-nav form :hover {
-  color: #1A76D1;
-  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
-}
 nav form input {
   margin-left: auto;
   width: 50%;
@@ -94,18 +90,16 @@ nav form input {
 }
 nav form input ::-moz-placeholder {
   font-size: 20px;
-  color: #1A76D1;
 }
 nav form input ::placeholder {
   font-size: 20px;
-  color: #1A76D1;
 }
 nav form .material-icons {
   font-size: 32px;
   border-radius: 0px 20px 20px 0px;
   background-color: #c5c5c2;
   padding: 12.5px;
-  border: 1px 1px 1px 0px solid #1A76D1;
+  color: #1A76D1;
 }
 
 .menu ul li:nth-child(1) a {
@@ -119,11 +113,30 @@ header {
   padding: 20px 50px;
   background-color: #F6F6F1;
 }
+@media screen and (max-width: 600px) {
+  header {
+    background-image: url(../img/header-home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
 header .head-lift h1 {
   font-size: 50px;
   text-transform: uppercase;
   padding: 222px 0px 50px 0px;
   color: #2C2D3F;
+}
+@media screen and (max-width: 1024px) {
+  header .head-lift h1 {
+    padding: 20px 0px 50px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .head-lift h1 {
+    padding: 20px 0px 50px 0px;
+    color: white;
+    text-align: center;
+  }
 }
 header button {
   font-size: 40px;
@@ -133,11 +146,37 @@ header button {
   color: #6C3838;
   border: 5px solid #1A76D1;
 }
+@media screen and (max-width: 1024px) {
+  header button {
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #1A76D1;
+  }
+}
+@media screen and (max-width: 600px) {
+  header button {
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #1A76D1;
+  }
+}
 header img {
   width: 50%;
   height: auto;
   border-radius: 10px;
   border: 10px solid #1A76D1;
+}
+@media screen and (max-width: 1024px) {
+  header img {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header img {
+    display: none;
+  }
 }
 
 .list-down {
@@ -145,6 +184,11 @@ header img {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
+}
+@media screen and (max-width: 600px) {
+  .list-down {
+    padding: 20px 20px;
+  }
 }
 .list-down h3 {
   display: flex;
@@ -154,6 +198,13 @@ header img {
   font-size: 20px;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 600px) {
+  .list-down h3 {
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    margin: 5px;
+  }
+}
 .list-down ul li :hover {
   color: rgb(0, 229, 255);
   border-bottom: 1px solid rgb(0, 229, 255);
@@ -162,9 +213,23 @@ header img {
   color: #fff;
   font-size: 20px;
 }
+@media screen and (max-width: 600px) {
+  .list-down a {
+    font-size: 13px;
+  }
+}
+.list-down a:hover {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+}
 
 .content {
   padding: 20px 50px;
+}
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 20px 10px;
+  }
 }
 
 .produce {
@@ -184,15 +249,32 @@ header img {
   font-weight: bold;
   color: #1A76D1;
 }
+@media screen and (max-width: 600px) {
+  .title h2 {
+    font-size: 30px;
+  }
+}
 
 .card {
   padding: 20px 0px;
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+  }
+}
 
 .new-produce-card {
   width: 23%;
+}
+@media screen and (max-width: 600px) {
+  .new-produce-card {
+    width: 48%;
+  }
 }
 .new-produce-card img {
   width: 100%;
@@ -203,6 +285,18 @@ header img {
   padding: 20px 20px;
   font-size: 25px;
   background-color: #1A76D1;
+}
+@media screen and (max-width: 1024px) {
+  .describe {
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .describe {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
 }
 .describe strong {
   color: yellow;
@@ -229,12 +323,17 @@ header img {
   background-color: #fff;
   border-bottom: 5px solid #1A76D1;
 }
-.sale-title h3 {
+.sale-title h2 {
   display: flex;
   flex-direction: column;
   border-bottom: 5px solid #fff;
-  color: black;
+  color: #1A76D1;
   margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .sale-title h2 {
+    font-size: 30px;
+  }
 }
 
 .salepro-card {
@@ -258,6 +357,11 @@ header img {
   left: 25%;
   right: 25%;
 }
+@media screen and (max-width: 600px) {
+  .sale-card form {
+    display: block;
+  }
+}
 .sale-card form button {
   border: none;
   color: #fff;
@@ -266,6 +370,23 @@ header img {
   border-radius: 10px;
   background-color: #1A76D1;
   padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  .sale-card form button {
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #1A76D1;
+    margin-bottom: 13px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sale-card form button {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #1A76D1;
+  }
 }
 
 footer {
@@ -295,7 +416,7 @@ footer {
 }
 .block ul li :hover {
   color: rgb(0, 229, 255);
-  border-bottom: 1px solid rgb(0, 229, 255);
+  border-bottom: 2px solid yellow;
 }
 .block a {
   display: flex;
