@@ -114,6 +114,11 @@ header {
   justify-content: space-between;
   padding: 0px 50px;
 }
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0px 20px;
+  }
+}
 header .header-left {
   position: relative;
   display: inline-block;
@@ -192,11 +197,12 @@ main .about-us01 {
 @media screen and (max-width: 600px) {
   main .about-us01 {
     flex-direction: column;
+    padding: 0px 20px;
   }
 }
 main .about-us01 .main_left {
   width: 50%;
-  padding: 50px 0px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 1024px) {
   main .about-us01 .main_left {
@@ -261,9 +267,19 @@ main .about-us01 .main_right h3 {
 main .about-us02 {
   padding: 0px 50px;
 }
+@media screen and (max-width: 600px) {
+  main .about-us02 {
+    padding: 0px 20px;
+  }
+}
 main .about-us02 .section-top {
   text-align: center;
   padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  main .about-us02 .section-top {
+    padding: 5px;
+  }
 }
 main .about-us02 .section-top h1 {
   color: #1A76D1;
@@ -273,6 +289,7 @@ main .about-us02 .section-top h1 {
 @media screen and (max-width: 600px) {
   main .about-us02 .section-top h1 {
     font-size: 22px;
+    padding: 5px;
   }
 }
 main .about-us02 .section-bottom {
@@ -352,6 +369,7 @@ main .aside-top {
 @media screen and (max-width: 600px) {
   main .aside-top {
     flex-wrap: wrap;
+    padding: 0px 20px;
   }
 }
 main .aside-top .aside-top_left {
@@ -379,7 +397,7 @@ main .aside-center {
 }
 @media screen and (max-width: 600px) {
   main .aside-center {
-    padding: 5px 50px;
+    padding: 0px 20px;
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
@@ -405,11 +423,9 @@ main .aside-bottom {
   main .aside-bottom {
     flex-wrap: wrap;
     width: auto;
+    padding: 15px 20px;
   }
   main .aside-bottom :nth-child(2) {
-    display: none;
-  }
-  main .aside-bottom :nth-child(3) {
     display: none;
   }
 }
@@ -419,9 +435,8 @@ main .aside-bottom .group-img {
 }
 @media screen and (max-width: 600px) {
   main .aside-bottom .group-img {
-    width: 100%;
+    width: 48%;
     flex-wrap: wrap;
-    margin-bottom: 20px;
   }
 }
 main .aside-bottom .group-img img {
@@ -440,7 +455,7 @@ main .aside-bottom .group-img img {
 }
 @media screen and (max-width: 600px) {
   .value {
-    padding: 5px 20px;
+    padding: 10px 20px;
   }
 }
 .value h2 {
@@ -463,6 +478,7 @@ main .aside-bottom .group-img img {
 @media screen and (max-width: 600px) {
   .value .card-box {
     text-align: start;
+    padding-bottom: 10px;
   }
 }
 .value .card-box .box {
@@ -493,13 +509,13 @@ main .aside-bottom .group-img img {
 }
 @media screen and (max-width: 1024px) {
   .value .card-box .box h4 {
-    font-size: 18;
+    font-size: 20;
     padding: 20px;
   }
 }
 @media screen and (max-width: 600px) {
   .value .card-box .box h4 {
-    font-size: 15px;
+    font-size: 18px;
     padding: 15px;
   }
 }
@@ -514,7 +530,7 @@ main .aside-bottom .group-img img {
 @media screen and (max-width: 600px) {
   .value .card-box .box p {
     padding: 20px 5px;
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -530,7 +546,7 @@ main .aside-bottom .group-img img {
 }
 @media screen and (max-width: 600px) {
   .community {
-    padding: 5px 20px;
+    padding: 10px 20px;
     text-align: start;
   }
 }
@@ -542,7 +558,7 @@ main .aside-bottom .group-img img {
 }
 @media screen and (max-width: 600px) {
   .community h2 {
-    padding: 10px;
+    padding: 5px;
   }
 }
 .community p {
@@ -555,7 +571,7 @@ main .aside-bottom .group-img img {
 }
 @media screen and (max-width: 600px) {
   .community p {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
 .community .img {
@@ -579,7 +595,7 @@ main .aside-bottom .group-img img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 20px;
+    padding: 5px 10px;
   }
 }
 .community .img .card-img p {
