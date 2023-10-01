@@ -62,16 +62,16 @@ header {
         @include responsive('tablet') {
             font-size: 30px;
             border-radius: $size;
-            padding: $size;
+            padding: 15px;
             border: 3px solid $main-color;
         }
 
         @include responsive('phone') {
             font-size: 25px;
-            border-radius: $size;
-            padding: $size;
+            border-radius: 10px;
+            padding: 10px;
             margin-left: 50px;
-            border: 3px solid $main-color;
+            border: 1px solid $main-color;
 
         }
     }
@@ -175,8 +175,12 @@ header {
         font-weight: bold;
         color: $main-color;
 
+        @include responsive('tablet') {
+            font-size: 28px;
+
+        }
         @include responsive('phone') {
-            font-size: 30px;
+            font-size: 23px;
 
         }
     }
@@ -190,10 +194,15 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @include responsive('tablet') {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
     @include responsive('phone') {
         display: flex;
         flex-wrap: wrap;
-        padding: 10px 10px;
+        
     }
 
 
@@ -205,8 +214,22 @@ header {
 .new-produce-card {
     width: 23%;
 
+    @include responsive('tablet') {
+        width: 48%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px ;
+
+
+    }
     @include responsive('phone') {
         width: 48%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px ;
+
 
     }
 
@@ -223,12 +246,15 @@ header {
 
     @include responsive('tablet') {
         padding: 10px 10px;
-        font-size: 18px;
+        font-size: $size;
+        width:100%;
+
     }
 
     @include responsive('phone') {
-        padding: 10px 10px;
+        padding: 5px 5px 5px 5px ;
         font-size: 15px;
+        width: 100%;
 
     }
 
@@ -284,8 +310,9 @@ header {
 
         @include responsive('phone') {
             font-size: 20px;
-
-
+        }
+        @include responsive('tablet') {
+            font-size: 30px;
         }
     }
 
@@ -293,17 +320,18 @@ header {
 }
 
 .salepro-card {
-   
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    
+
 
 }
 
 .sale-card {
     width: 23%;
+
     @include responsive ('phone') {
         width: 48%;
         display: flex;
