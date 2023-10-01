@@ -40,6 +40,7 @@ nav {
 @media screen and (max-width: 600px) {
   nav {
     height: 50px;
+    padding: 2px 20px;
   }
 }
 nav .menu {
@@ -94,6 +95,11 @@ nav form input {
   background-color: #dedbdb;
   border: none;
   color: #2C2D3F;
+}
+@media screen and (max-width: 1024px) {
+  nav form input {
+    width: 100%;
+  }
 }
 nav form input ::-moz-placeholder {
   font-size: 20px;
@@ -260,6 +266,11 @@ header .head-top .head-top-right {
   flex-direction: column;
   padding: 0px 50px;
 }
+@media screen and (max-width: 600px) {
+  .sale-produce {
+    padding: 0px 20px;
+  }
+}
 
 .pets {
   padding-top: 20px;
@@ -301,6 +312,7 @@ header .head-top .head-top-right {
 @media screen and (max-width: 1024px) {
   .deteil {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -321,7 +333,7 @@ header .head-top .head-top-right {
 }
 @media screen and (max-width: 600px) {
   .card {
-    width: 100%;
+    width: 70%;
   }
 }
 
@@ -365,15 +377,18 @@ header .head-top .head-top-right {
 }
 .card-botom .pric-buy form button {
   padding: 10px 20px;
-  background-color: #1A76D1;
   border: none;
-  color: #fff;
 }
 
 .our-service .top {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
+}
+@media screen and (max-width: 600px) {
+  .our-service .top {
+    padding: 20px 20px;
+  }
 }
 .our-service .top img {
   width: 48%;
@@ -405,6 +420,12 @@ header .head-top .head-top-right {
 }
 .our-service .top .describe form {
   padding-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .our-service .top .describe form {
+    display: flex;
+    justify-content: end;
+  }
 }
 .our-service .top .describe form :hover {
   color: #1A76D1;
@@ -470,6 +491,11 @@ header .head-top .head-top-right {
 .our-service .botom {
   padding: 20px 50px;
 }
+@media screen and (max-width: 600px) {
+  .our-service .botom {
+    padding: 20px 20px;
+  }
+}
 .our-service .botom h2 {
   text-align: center;
   font-weight: bold;
@@ -524,6 +550,7 @@ footer {
   footer {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 20px;
   }
 }
 

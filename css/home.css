@@ -33,6 +33,7 @@ nav {
 @media screen and (max-width: 600px) {
   nav {
     height: 50px;
+    padding: 2px 20px;
   }
 }
 nav .menu {
@@ -87,6 +88,11 @@ nav form input {
   background-color: #dedbdb;
   border: none;
   color: #2C2D3F;
+}
+@media screen and (max-width: 1024px) {
+  nav form input {
+    width: 100%;
+  }
 }
 nav form input ::-moz-placeholder {
   font-size: 20px;
@@ -420,6 +426,7 @@ footer {
   footer {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 20px;
   }
 }
 
