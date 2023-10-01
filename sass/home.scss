@@ -164,6 +164,7 @@ header {
 }
 
 .title {
+    margin: 20px 0px;
     display: flex;
     background-color: #fff;
     border-bottom: 5px solid $main-color;
@@ -257,7 +258,7 @@ header {
 }
 
 .sale-produce {
-    padding: 0px 50px;
+    padding: 20px 50px;
 
     @include responsive(phone) {
         padding: 0px 10px;

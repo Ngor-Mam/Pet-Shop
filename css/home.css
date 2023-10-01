@@ -248,6 +248,7 @@ header img {
 }
 
 .title {
+  margin: 20px 0px;
   display: flex;
   background-color: #fff;
   border-bottom: 5px solid #1A76D1;
@@ -336,7 +337,7 @@ header img {
 }
 
 .sale-produce {
-  padding: 0px 50px;
+  padding: 20px 50px;
   display: flex;
 }
 @media screen and (max-width: 600px) {
