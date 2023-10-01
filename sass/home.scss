@@ -21,9 +21,10 @@ header {
     justify-content: space-between;
     padding: $size $size + 30;
     background-color: $bg-color;
+
     @include responsive('phone') {
         padding: 0px 0px 150px 20px;
-        
+
     }
 
     @include responsive('phone') {
@@ -143,13 +144,9 @@ header {
 }
 
 .content {
-    padding: $size 50px;
-
     @include responsive('tablet') {
         padding: $size 10px;
     }
-
-
 }
 
 .produce {
@@ -158,12 +155,14 @@ header {
 
 }
 
-.home-newpro{
-    padding:  0px 50px;
-    @include responsive(phone){
-        padding: 0px 10px; 
+.home-newpro {
+    padding: 0px 50px;
+
+    @include responsive(phone) {
+        padding: 0px 10px;
     }
 }
+
 .title {
     display: flex;
     background-color: #fff;
@@ -178,6 +177,7 @@ header {
         @include responsive('tablet') {
             font-size: 28px;
         }
+
         @include responsive('phone') {
             font-size: 23px;
         }
@@ -193,10 +193,11 @@ header {
 
     @include responsive('tablet') {
         flex-wrap: wrap;
-        
+
     }
+
     @include responsive('phone') {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 }
 
@@ -208,8 +209,9 @@ header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 15px  0px ;
+        padding: 15px 0px;
     }
+
     @include responsive('phone') {
         width: 49%;
         display: flex;
@@ -231,12 +233,12 @@ header {
     @include responsive('tablet') {
         padding: 10px 10px;
         font-size: $size;
-        width:100%;
+        width: 100%;
 
     }
 
     @include responsive('phone') {
-        padding: 5px 5px 5px 5px ;
+        padding: 5px 5px 5px 5px;
         font-size: 15px;
         width: 100%;
 
@@ -256,10 +258,13 @@ header {
 
 .sale-produce {
     padding: 0px 50px;
-    @include responsive(phone){
-        padding: 0px 10px; 
+
+    @include responsive(phone) {
+        padding: 0px 10px;
     }
+
     display: flex;
+
     h2 {
         padding: $size 0px 0px 0px;
         font-size: 40px;
@@ -296,6 +301,7 @@ header {
         @include responsive('phone') {
             font-size: 20px;
         }
+
         @include responsive('tablet') {
             font-size: 30px;
         }

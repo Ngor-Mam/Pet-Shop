@@ -587,7 +587,6 @@ main .aside-bottom .group-img img {
 }
 .community .img {
   display: flex;
-  padding: 10px;
   align-items: center;
   text-align: center;
 }

@@ -227,9 +227,6 @@ header img {
   border-bottom: 2px solid yellow;
 }
 
-.content {
-  padding: 20px 50px;
-}
 @media screen and (max-width: 1024px) {
   .content {
     padding: 20px 10px;
