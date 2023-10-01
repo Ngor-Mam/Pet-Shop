@@ -4,24 +4,26 @@
 * {
     @include univer;
 }
-
+@import "./components/nav";
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     background-image: url(/img/background-image.webp);
     background-repeat: no-repeat;
     background-size: $width $width;
-    height: 100vh;
-    margin: 20px;
+    height: auto;
+    
 
+}
+.contact-us{
+    @include centersnojus;
+    justify-content: center;
+   
 }
 
 
 form {
-    display: flex;
+    @include centersnojus;
     justify-content: center;
-    align-items: center;
     width: 70%;
     height: 80%;
     
@@ -63,6 +65,13 @@ textarea {
     height: 5vh;
 }
 
+input[type=tel]{
+    @include type;
+}
+select{
+    @include type;
+    
+}
 
 button {
     padding: 10px;
