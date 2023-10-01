@@ -315,6 +315,8 @@ main {
 
         .center_right {
             width: 30%;
+            display: flex;
+            justify-content: end;
         }
 
     }

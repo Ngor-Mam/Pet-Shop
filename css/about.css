@@ -424,6 +424,8 @@ main .aside-center .center_left {
 }
 main .aside-center .center_right {
   width: 30%;
+  display: flex;
+  justify-content: end;
 }
 main .aside-bottom {
   padding: 20px 50px;
