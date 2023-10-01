@@ -471,12 +471,11 @@ main {
             text-align: start;
         }
         .card-img{
-            padding: 50px 50px ;
+            padding: 20px 0px ;
             @include responsive('phone'){
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 5px 10px;
             }
             p{
                 padding: 20px 10px ;
@@ -488,9 +487,9 @@ main {
                 }
             }
             img{
-                width: 100%;
+                width: 90%;
                 @include responsive('tablet'){
-                    width: 90%;
+                    width: 80%;
                 }
                 @include responsive('phone'){
                     width: 40%;

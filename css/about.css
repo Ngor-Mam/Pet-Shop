@@ -598,14 +598,13 @@ main .aside-bottom .group-img img {
   }
 }
 .community .img .card-img {
-  padding: 50px 50px;
+  padding: 20px 0px;
 }
 @media screen and (max-width: 600px) {
   .community .img .card-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 10px;
   }
 }
 .community .img .card-img p {
@@ -622,11 +621,11 @@ main .aside-bottom .group-img img {
   }
 }
 .community .img .card-img img {
-  width: 100%;
+  width: 90%;
 }
 @media screen and (max-width: 1024px) {
   .community .img .card-img img {
-    width: 90%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 600px) {
