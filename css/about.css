@@ -130,18 +130,21 @@ header .header-left {
   display: inline-block;
   padding-top: 50px;
   font-size: 30px;
-  color: #2C2D3F;
+  color: #1A76D1;
 }
 @media screen and (max-width: 1024px) {
   header .header-left {
+    position: absolute;
+    width: 50%;
     font-size: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0px;
   }
 }
 @media screen and (max-width: 600px) {
   header .header-left {
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 10px;
   }
 }
 header button {
@@ -179,11 +182,13 @@ header .header-right img {
 @media screen and (max-width: 1024px) {
   header .header-right {
     width: 100%;
+    padding-top: 10px;
   }
 }
 @media screen and (max-width: 600px) {
   header .header-right {
-    width: 80%;
+    width: 100%;
+    padding-top: 10px;
   }
 }
 header .header-left:hover .header-left-content {

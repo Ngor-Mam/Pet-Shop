@@ -32,17 +32,19 @@ header {
         display: inline-block;
         padding-top: 50px;
         font-size: 30px;
-        color: $text-color;
+        color: $main-color;
         @include responsive('tablet'){
+            position: absolute;
+            width: 50%;
             font-size: 25px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding: 20px 0px;
         }
         @include responsive('phone'){
-            font-size: 10px;
+            font-size: 15px;
+            font-weight: normal;
+            padding-top: 10px;
         }
     }
-
     button {
         padding: 10px 50px;
         background-color: $main-color;
@@ -75,9 +77,11 @@ header {
         }
         @include responsive('tablet'){
             width: 100%;
+            padding-top: 10px;
         }
         @include responsive('phone'){
-            width: 80%;
+            width: 100%;
+            padding-top: 10px;
         }
     }
 
