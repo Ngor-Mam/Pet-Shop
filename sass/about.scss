@@ -23,6 +23,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
+    @include responsive('phone'){
+        padding: 0px 20px;
+    }
 
     .header-left {
         position: relative;
@@ -98,11 +101,12 @@ main {
 
         @include responsive('phone') {
             flex-direction: column;
+            padding: 0px 20px;
         }
 
         .main_left {
             width: 50%;
-            padding: 50px 0px;
+            padding: 10px 0px;
 
             @include responsive('tablet') {
                 width: auto;
@@ -165,10 +169,15 @@ main {
 
     .about-us02 {
         padding: 0px 50px;
+        @include responsive('phone'){
+            padding: 0px 20px;
+        }
         .section-top {
             text-align: center;
             padding: 20px;
-
+            @include responsive('phone'){
+                padding: 5px;
+            }
             h1 {
                 color: $main-color;
                 font-weight: bold;
@@ -176,6 +185,7 @@ main {
 
                 @include responsive('phone') {
                     font-size: 22px;
+                    padding: 5px;
                 }
             }
         }
@@ -246,6 +256,7 @@ main {
         @include responsive('phone') {
             width: auto;
             flex-wrap: wrap;
+            
         }
     }
 
@@ -257,11 +268,11 @@ main {
 
         @include responsive('phone') {
             flex-wrap: wrap;
+            padding: 0px 20px;
         }
 
         .aside-top_left {
             width: 30%;
-            // padding-bottom: 20px;
             @include responsive('phone') {
                 width: 40%;
                 font-size: 21px;
@@ -284,7 +295,7 @@ main {
         padding: 20px 50px;
 
         @include responsive('phone') {
-            padding: 5px 50px;
+            padding: 0px 20px;
             flex-wrap: wrap;
             flex-direction: column-reverse;
         }
@@ -312,10 +323,8 @@ main {
         @include responsive('phone') {
             flex-wrap: wrap;
             width: auto;
+            padding: 15px 20px;
             :nth-child(2){
-                display: none;
-            }
-            :nth-child(3){
                 display: none;
             }
         }
@@ -326,9 +335,8 @@ main {
             background: thistle;
 
             @include responsive('phone') {
-                width: 100%;
+                width: 48%;
                 flex-wrap: wrap;
-                margin-bottom: 20px;
             }
 
             img {
@@ -350,7 +358,7 @@ main {
         padding: 10px 30px;
     }
     @include responsive('phone'){
-        padding: 5px 20px;
+        padding: 10px 20px;
     }
     h2{
         color:$main-color;
@@ -368,6 +376,7 @@ main {
         }
         @include responsive('phone'){
             text-align: start;
+            padding-bottom: 10px;
         }
         .box{
             width: 45%;
@@ -391,11 +400,11 @@ main {
                 text-transform: uppercase;
                 text-align: center;
                 @include responsive('tablet'){
-                    font-size: 18;
+                    font-size: 20;
                     padding: 20px ;
                 }
                 @include responsive('phone'){
-                    font-size: 15px;
+                    font-size: 18px;
                     padding: 15px ;
                 }
             }
@@ -408,7 +417,7 @@ main {
                 }
                 @include responsive('phone'){
                     padding: 20px 5px;
-                    font-size: 15px;
+                    font-size: 17px;
                 }
             }
 
@@ -424,7 +433,7 @@ main {
         padding: 10px 30px;
     }
     @include responsive('phone'){
-        padding: 5px 20px;
+        padding: 10px 20px;
         text-align: start;
     }
     h2{
@@ -434,19 +443,17 @@ main {
         font-size: 30px;
 
         @include responsive('phone') {
-            padding: 10px;
+            padding: 5px;
         }
     }
 
     p {
         padding-left: 10px;
-
         @include responsive('tablet') {
             font-size: 18px;
         }
-
         @include responsive('phone') {
-            padding-left: 20px;
+            padding-left: 10px;
         }
     }
 
@@ -466,7 +473,7 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 5px 20px;
+                padding: 5px 10px;
             }
             p{
                 padding: 20px 10px ;
