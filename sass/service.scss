@@ -91,7 +91,6 @@ header {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-
                 h1 {
                     color: $text-color;
                 }
@@ -182,6 +181,9 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0px 50px;
+    @include responsive(phone){
+        padding: 0px 20px;     
+    }
 }
 
 .pets {
@@ -225,6 +227,7 @@ header {
 
     @include responsive(tablet) {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     @include responsive(phone) {
@@ -239,6 +242,9 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 20px 50px;
+        @include responsive(phone){
+            padding: 20px 20px;
+        }
 
         img {
             width: 48%;
@@ -270,6 +276,10 @@ header {
 
             form {
                 padding-top: 20px;
+                @include responsive(phone){
+                    display: flex;
+                    justify-content: end;
+                }
 
                 :hover {
                     color: $main-color;
@@ -281,6 +291,7 @@ header {
                     background-color: yellow;
                     border: none;
                     font-size: 20px;
+                    
                 }
             }
         }
@@ -340,6 +351,9 @@ header {
 
     .botom {
         padding: 20px 50px;
+        @include responsive(phone){
+            padding: 20px 20px;
+        }
 
         h2 {
             text-align: center;

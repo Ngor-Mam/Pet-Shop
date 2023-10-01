@@ -7,7 +7,7 @@
         width: 45%;
     }
     @include responsive(phone){
-        width: 100%;
+        width: 70%;
     }
 }
 .card-top{
@@ -50,9 +50,7 @@
             }
             button{
                 padding: 10px 20px;
-                background-color: $main-color;
                 border: none;
-                color: #fff
             }
         }
     }

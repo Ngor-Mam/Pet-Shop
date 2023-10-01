@@ -18,6 +18,7 @@ nav {
 
     @include responsive(phone) {
         height: 50px;
+        padding: 2px 20px;
     }
 
     .menu {
@@ -54,11 +55,11 @@ nav {
             }
 
         }
+        
     }
 
     form {
         @include centersnojus;
-
         @include responsive(phone) {
             display: none;
         }
@@ -71,6 +72,9 @@ nav {
             background-color: #dedbdb;
             border: none;
             color: $text-color;
+            @include responsive(tablet) {
+                width: 100%;
+            }
     
             ::placeholder {
                 font-size: 20px;
