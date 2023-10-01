@@ -10,22 +10,6 @@
 </head>
 
 <body>
-    <nav>
-        <img src="../img/Logo_pet_shop-removebg-preview.png" alt="logo">
-        <div class="menu">
-            <ul>
-
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../page/service.html">service</a></li>
-                <li><a href="../page/about.html">About</a></li>
-            </ul>
-            <form action="service.html">
-                <input type="search" placeholder="Search">
-                <i class="material-icons">search</i>
-            </form>
-        </div>
-    </nav>
-    <hr>
     <div class="contact-us">
         <form action="form">
             <div class="container">
@@ -53,20 +37,22 @@
                     </div>
                 </div>
                 <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address:"></textarea>
-                <div class="phone">
-                    <label for="tell">Phone Number</label>
-                    <input type="tel" name="tell" placeholder="91-0615697432">
+                <div class="tell-choice">
+                    <div class="phone">
+                        <label for="tell">Phone Number</label>
+                        <input type="tel" name="tell" placeholder="91-0615697432">
+                        <select id="pets" name="pets">
+                            <label for="choic"> Choose a pet</label>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="fish">Fish</option>
+                            <option value="bird">Birds</option>
+                            <option value="rabbit">Rabbit</option>
+                        </select>
+
+                    </div>
 
                 </div>
-                <label for="cars">Choose a pet:</label>
-                <select id="pets" name="pets">
-                    <label for="cars">Choose a pet:</label>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="fish">Fish</option>
-                    <option value="bird">Birds</option>
-                    <option value="rabbit">Rabbit</option>
-                </select>
                 <div class="button">
                     <button>Pay Now</button>
                 </div>

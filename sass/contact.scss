@@ -1,23 +1,26 @@
-@import "_main";
-
-
+@import "./main";
 * {
     @include univer;
 }
-@import "./components/nav";
+
 body {
-    
+
     background-image: url(/img/background-image.webp);
     background-repeat: no-repeat;
     background-size: $width $width;
-    height: auto;
+    height: 100vh;
+    @include responsive ('phone'){
+        margin:0px 20px 0px;
+    }
     
 
+
 }
-.contact-us{
+
+.contact-us {
     @include centersnojus;
     justify-content: center;
-   
+    height: 100vh;
 }
 
 
@@ -25,7 +28,12 @@ form {
     @include centersnojus;
     justify-content: center;
     width: 70%;
-    height: 80%;
+    height: 100vh;
+   
+    
+    
+   
+
 }
 
 h1 {
@@ -33,7 +41,7 @@ h1 {
     font-family: sans-serif;
     text-align: center;
     backdrop-filter: blur(3px);
-    color:$main-color;
+    color: $main-color;
 }
 
 label {
@@ -43,33 +51,61 @@ label {
     font-weight: bold;
     font-size: 15px;
     color: $text-color;
+    
+    
 }
 
 input[type=text] {
     @include type;
+    @include responsive ('phone'){
+        width: 180px;
+    }
+    
 }
 
 input[type=email] {
-    padding: 10px;
+    padding: 5px;
     width: 405px;
+    @include responsive ('phone'){
+        width: 365px;
+    }
 }
 
 input[type=password] {
     @include type;
+    @include responsive ('phone'){
+        width: 180px;
+    }
+}
+
+.tell-choice {
+    display: flex;
+    
+
 }
 
 textarea {
     margin-top: 10px;
     width: 405px;
     height: 5vh;
+    @include responsive ('phone'){
+        width: 365px;
+    }
 }
 
-input[type=tel]{
+input[type=tel] {
     @include type;
+    @include responsive ('phone'){
+        width: 180px;
+    }
 }
-select{
+
+select {
     @include type;
-    
+    @include responsive ('phone'){
+        width: 180px;
+    }
+
 }
 
 button {
@@ -78,7 +114,6 @@ button {
     border: 1px solid $main-color;
     background:$main-color;
     border-radius: 15px;
-    margin: 50px;
     color: $text-button;
+    margin: 20px 70px 20px 100px;
 }
-
