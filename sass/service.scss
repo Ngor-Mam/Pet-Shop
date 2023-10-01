@@ -33,12 +33,20 @@ header {
 
         .head-top-left {
             flex: 2;
+            @include responsive(phone) {
+                display: block;
+                position: absolute;
+                left: 5%;
+            }
+            h2{
+                color: $main-color;
+                font-weight: bold;
+                text-transform: uppercase;
+                @include responsive(phone) {
+                }
+            }
 
             form {
-                @include responsive(phone) {
-                    display: block;
-                }
-
                 button {
                     padding: 5px 20px;
                     border: none;

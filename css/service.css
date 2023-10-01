@@ -138,9 +138,16 @@ header .head-top .head-top-left {
   flex: 2;
 }
 @media screen and (max-width: 600px) {
-  header .head-top .head-top-left form {
+  header .head-top .head-top-left {
     display: block;
+    position: absolute;
+    left: 5%;
   }
+}
+header .head-top .head-top-left h2 {
+  color: #1A76D1;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 header .head-top .head-top-left form button {
   padding: 5px 20px;
@@ -333,7 +340,7 @@ header .head-top .head-top-right {
 }
 @media screen and (max-width: 600px) {
   .card {
-    width: 70%;
+    width: 85%;
   }
 }
 

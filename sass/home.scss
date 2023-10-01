@@ -23,6 +23,11 @@ header {
     background-color: $bg-color;
 
     @include responsive('phone') {
+        padding: 0px 0px 150px 20px;
+
+    }
+
+    @include responsive('phone') {
         background-image: url(../img/header-home.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -30,21 +35,20 @@ header {
 
     }
 
-    .head-lift {
+    .header-left {
         h1 {
             font-size: 50px;
             text-transform: uppercase;
-            padding: 60px 0px 50px 0px;
-            color: $text-color;
+            padding: 50px 0px;
+            color: $main-color;
 
             @include responsive('tablet') {
                 padding: 20px 0px 50px 0px;
             }
 
             @include responsive('phone') {
-                padding: 20px 0px 20px 0px;
-                color: $text-button;
-                text-align: center;
+                padding: 20px 10px 150px 10px;
+                font-size: 40px;
             }
         }
     }
@@ -60,19 +64,13 @@ header {
 
 
         @include responsive('tablet') {
-            font-size: 30px;
             border-radius: $size;
             padding: 15px;
             border: 3px solid $main-color;
         }
 
         @include responsive('phone') {
-            font-size: 25px;
-            border-radius: 10px;
-            padding: 10px;
-            margin-left: 50px;
-            border: 1px solid $main-color;
-
+            display: none;
         }
     }
 
@@ -116,8 +114,6 @@ header {
 
         @include responsive('phone') {
             font-size: 15px;
-            border-bottom: 1px solid #fff;
-            margin: 5px;
         }
     }
 
@@ -148,13 +144,9 @@ header {
 }
 
 .content {
-    padding: $size 50px;
-
     @include responsive('tablet') {
         padding: $size 10px;
     }
-
-
 }
 
 .produce {
@@ -163,13 +155,20 @@ header {
 
 }
 
+.home-newpro {
+    padding: 0px 50px;
+
+    @include responsive(phone) {
+        padding: 0px 10px;
+    }
+}
+
 .title {
     display: flex;
     background-color: #fff;
     border-bottom: 5px solid $main-color;
 
     h2 {
-        padding-right: 10px;
         font-size: 40px;
         padding: $size 0px 0px 0px;
         font-weight: bold;
@@ -177,11 +176,10 @@ header {
 
         @include responsive('tablet') {
             font-size: 28px;
-
         }
+
         @include responsive('phone') {
             font-size: 23px;
-
         }
     }
 
@@ -190,25 +188,17 @@ header {
 
 
 .card {
-    padding: $size 0px;
     display: flex;
     justify-content: space-between;
 
     @include responsive('tablet') {
-        display: flex;
         flex-wrap: wrap;
-        
+
     }
+
     @include responsive('phone') {
-        display: flex;
         flex-wrap: wrap;
-        
     }
-
-
-
-
-
 }
 
 .new-produce-card {
@@ -219,18 +209,14 @@ header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 10px ;
-
-
+        padding: 15px 0px;
     }
+
     @include responsive('phone') {
-        width: 48%;
+        width: 49%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 10px ;
-
-
     }
 
     img {
@@ -247,12 +233,12 @@ header {
     @include responsive('tablet') {
         padding: 10px 10px;
         font-size: $size;
-        width:100%;
+        width: 100%;
 
     }
 
     @include responsive('phone') {
-        padding: 5px 5px 5px 5px ;
+        padding: 5px 5px 5px 5px;
         font-size: 15px;
         width: 100%;
 
@@ -271,8 +257,13 @@ header {
 }
 
 .sale-produce {
-    display: flex;
+    padding: 0px 50px;
 
+    @include responsive(phone) {
+        padding: 0px 10px;
+    }
+
+    display: flex;
 
     h2 {
         padding: $size 0px 0px 0px;
@@ -285,7 +276,6 @@ header {
 }
 
 .sale-title {
-
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -311,6 +301,7 @@ header {
         @include responsive('phone') {
             font-size: 20px;
         }
+
         @include responsive('tablet') {
             font-size: 30px;
         }
