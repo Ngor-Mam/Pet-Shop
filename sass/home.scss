@@ -34,7 +34,7 @@ header {
         h1 {
             font-size: 50px;
             text-transform: uppercase;
-            padding: 180px 0px 50px 0px;
+            padding: 60px 0px 50px 0px;
             color: $text-color;
 
             @include responsive('tablet') {
@@ -42,7 +42,7 @@ header {
             }
 
             @include responsive('phone') {
-                padding: 20px 0px 50px 0px;
+                padding: 20px 0px 20px 0px;
                 color: $text-button;
                 text-align: center;
             }

@@ -129,7 +129,7 @@ header {
 header .head-lift h1 {
   font-size: 50px;
   text-transform: uppercase;
-  padding: 180px 0px 50px 0px;
+  padding: 60px 0px 50px 0px;
   color: #2C2D3F;
 }
 @media screen and (max-width: 1024px) {
@@ -139,7 +139,7 @@ header .head-lift h1 {
 }
 @media screen and (max-width: 600px) {
   header .head-lift h1 {
-    padding: 20px 0px 50px 0px;
+    padding: 20px 0px 20px 0px;
     color: white;
     text-align: center;
   }
